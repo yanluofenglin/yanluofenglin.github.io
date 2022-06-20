@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+
+:root
+{
+    --font-color-0: #04077e;
+    --font-color-1: #000;
+    --font-color-2: #666;
+    --font-color-3: #aaa;
+    --bg-color-1: #eee;
+    --line-1: #ccc;
+    --line-2: #ddd;
+}
+
+*{ margin:0; padding:0; }
+.toc-list
+{
+    width: calc(100% - 6vw);
+    max-width: 880px;
+
+height: calc(8vw + 48px + 44px);
+    padding: 3vh 5vw 0;
+
+    background: #fff;
+    border-radius: 24px;
+    border: 1px solid #eee;
+overflow-y: scroll;
+overflow-x: hidden;
+position: fixed;
+  bottom: 0vw;
+left: 50%;
+transform: translate(-50%,0);
+}
+.toc-list::-webkit-scrollbar{display: none;}
+.toc-button
+{
+    display: block;
+    padding: 8px 17px 12px 17px;
+    border-radius: 18px;
+    background: #fff;
+    border: 1px solid #eee;
+//    margin: 8px 0;
+    transition: background ease-in-out .5s;
+position: absolute;
+  right: 5vw;
+bottom: calc(8vw + 48px + 44px - 50px - 3vh);
+}
+.toc-button:active
+{
+    background: var(--bg-color-1);
+    transition: background ease-in-out .5s;
+    }
+.toc-button svg{
+            width: 14px;
+            height: 8px;
+            margin: 0 auto;
+ }
+.toc-button svg path {
+            fill: none;
+            stroke-width: 2; 
+            stroke: #000; 
+            stroke-linecap: round;
+	stroke-linejoin="round"
+            transition:all 1s;    
+}
+.toc-button:active svg path:nth-child(1){
+            stroke:#000;  
+            d:path("M1 1L13 7");
+}
+ .toc-button:active svg path:nth-child(2){
+            stroke-width: 100; 
+            opacity: 0; 
+}
+ .toc-button:active svg path:nth-child(3){
+            stroke:#000;
+            d:path("M1 7L13 1");
+ }
+
+.toc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+
+.toc-list li
+{
+
+    margin: 0 0 4px;
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.to-top
+{
+    display: block;
+    padding: 8px 17px 12px 17px;
+    border-radius: 18px;
+    background: #fff;
+    border: 1px solid #eee;
+ //   margin: 8px 0;
+    transition: background ease-in-out .5s;
+position: fixed;
+  right: 8vw;
+  bottom: calc(8vw + 48px + 44px);
+}
+@media (any-hover: hover){
+.to-top:hover
+{
+    background: var(--bg-color-1);
+    transition: background ease-in-out .5s;
+    }}
+
+.to-top svg
+{
+    transform: translateY(0);
+    transition: transform ease-in-out .5s;
+}
+@media (any-hover: hover){
+.to-top:hover svg
+{
+    transform: translateY(-4px);
+    transition: transform ease-in-out .5s;
+    }}
+
+
+
+
+
+.categories-list{
+    flex: 0 0 100%;
+    //display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+.categories{
+    flex: 0 0 100%;
+}
+.categories-one{
+margin: 0 0 3%;
+font-size: 1rem;
+color: var(--font-color-1);
+}
+.categories-two{
+margin: 0 0 3%;
+text-indent: 2em; 
+font-size: 1rem;
+color: var(--font-color-3);
+}
+.tag-list{
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.tags{
+flex: 0 0 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+   align-content: center;
+}
+.tags li{
+margin: 8px 16px 8px 0px;
+padding: 1px 1px 1px 1px;
+background-color: var(--bg-color-1);
+border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.tags-title{
+padding: 2px 16px;
+align-items: center;
+}
+.tags-num{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+padding: 2px 10px;
+background-color: #fff;
+border-radius: 4px;
+align-items: center;
+}
+.small-tags-box{
+flex: 0 0 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+.small-tags{
+font-size: 12px;
+margin: 8px 8px 0 0;
+padding: 2px 10px;
+background-color: var(--bg-color-1);
+border-radius: 4px;
+align-items: center;
+}
+
+

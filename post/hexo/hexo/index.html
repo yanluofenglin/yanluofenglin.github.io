@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <link rel="alternate icon" type="image/png" href="/img/favicon.png">
+    <title>烟络枫林</title>
+    
+<link rel="stylesheet" href="/css/reset.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/css/markdown.css">
+
+    
+<link rel="stylesheet" href="/css/fonts.css">
+
+<meta name="generator" content="Hexo 6.1.0"></head>
+    <body>
+	<div class="all">
+        <div class="paper">
+            <div class="paper-main">
+                
+                    <div class="post-header">
+
+    <a class="go-home" href="/">
+        <svg width="8" height="14" viewBox="0 0 8 14">
+            <path d="M7 1L1 7 7 13" stroke="#000" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+	<ul class="post-nav">
+        
+        <li><a href="/">首页</a></li>
+        
+        <li><a href="/archives">归档</a></li>
+        
+        <li><a href="/categories">分类</a></li>
+        
+        <li><a href="/tags">标签</a></li>
+        
+        <li><a href="/about">关于</a></li>
+        
+    </ul>
+</div>
+                
+				
+				
+				
+                <div class="post-main">
+
+    
+        <div class="post-main-title">
+            hexo
+        </div>
+        <div class="post-meta">
+            2018-04-22
+        </div>
+    
+
+    <div class="post-md">
+        <p>deploy:<br>  type: git<br>  repository: <a target="_blank" rel="noopener" href="https://github.com/yanluofenglin/yanluofenglin.github.io.git">https://github.com/yanluofenglin/yanluofenglin.github.io.git</a><br>  branch: main</p>
+<p>hexo new page “about”<br>1.git命令安装hexo：npm install -g hexo<br>安装部署工具npm install hexo-deployer-git -save<br>2.git命令初始化hexo：hexo init<br>3.git命令启动服务：hexo server（hexo s）<br>4.git命令卸载hexo：npm uninstall hexo-cli -g<br>5.hexo new “name”，新建一篇标题为name的文章<br>6.hexo clean，清除缓存文件 db.json 和已生成的静态文件 public<br>7.hexo g &#x3D; hexo generate，生成网站静态文件到默认设置的 public 文件夹<br>8.hexo d &#x3D; hexo deploy，自动生成网站静态文件，并部署到设定的仓库</p>
+<p>npm install 命令</p>
+<p>这里列举一些npm install过程中可能会用到的一些命令</p>
+<p>npm install xxx</p>
+<p>会把xxx包安装到node_modules目录中<br>不会修改package.json<br>之后运行npm install命令时，不会自动安装xxx到node_modules目录中<br>-g</p>
+<p>全局安装<br>-S， –save</p>
+<p>会把xxx包安装到node_modules目录中<br>会在package.json的dependencies属性下添加xxx<br>之后运行npm install命令时，会自动安装xxx到node_modules目录中<br>-P, –save-prod: Package will appear in yourdependencies</p>
+<p>xxx包将出现在依赖项中。这是默认值，除非出现-D或-O<br>安装包信息将加到devDependencies（开发阶段的依赖），所以开发阶段一般使用它<br>-D, –save-dev: Package will appear in your devDependencies</p>
+<p>xxx包将出现在您的devDependencies中<br>-O, –save-optional: Package will appear in your optionalDependencies.</p>
+<p>xxx包将出现在optionalDependencies中<br>–no-save: Prevents saving to dependencies</p>
+<p>防止保存到依赖项<br>-E, –save-exact 精确安装指定模块版本安装包，默认会安装最新的版本</p>
+<p>三、安装部署工具（方便以后更新）<br>npm install hexo-deployer-git -save<br>1、初始化本地仓库：<br>git init<br>2、连接远程仓库：<br>如果是第一次使用git，在使用git的时候会提示输入用户名和密码，用户名是自己的注册邮箱。<br>git remote add origin <a target="_blank" rel="noopener" href="https://github.com/wapchief/wapchief.github.io.git">https://github.com/wapchief/wapchief.github.io.git</a><br>3、发布hexo到github page<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>4、添加文件到本地仓库<br>git add<br>5、提交声明<br>git commit -m ‘内容’<br>6、推送到远程仓库（github）<br>这里建议创建一个新的分支hexo，用于管理hexo文件。提交的的时候只提交hexo网站html、css、等源文件。而默认的master用来部署更新项目,具体可以看我的github地址分支情况<a target="_blank" rel="noopener" href="https://github.com/wapchief/wapchief.github.io">https://github.com/wapchief/wapchief.github.io</a><br>创建并切换到新建分支：<br>git checkout -b hexo<br>将分支推送到远程仓库：<br>git push origin hexo<br>这时打开网站就能看到效果了。</p>
+
+    </div>
+
+
+</div>
+
+
+
+				
+                <div class="footer">
+    <span>Copyright © 2022 Yanluo</span>
+    <span>Theme Designed By <a target="_blank" href="https://yanluofenglin.github.io/">烟络</a></span>
+</div>
+
+
+<link rel="stylesheet" href="/css/a11y-dark.min.css">
+
+
+<script src="/js/highlight.min.js"></script>
+
+
+<script src="/js/highlightjs-line-numbers.js"></script>
+
+
+<script>
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
+</script>
+
+            </div>
+			<a class="to-top" href="javascript:scrollTo(0,0)" target="_self" style="">
+				<svg width="14" height="8" viewBox="0 0 14 8">
+					<path d="M1 7L7 1 13 7" stroke="#000" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</a>
+			
+			
+				<div class="toc-list-box">
+	<div class="toc-list" id="toc-list">
+		<a class="toc-button" id="toc-button">
+			<svg width="14" height="8" viewBox="0 0 14 8">
+				<path d="M1 1L13 1"/>
+				<path d="M1 4L13 4"/>
+				<path d="M1 7L13 7"/>
+			</svg>
+		</a>
+		
+	</div>
+</div>
+			
+			
+		</div>
+	</div>
+	
+    </body>
+	
+</html>
+<script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.js"></script>
+<script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="\js\decorate\snow2.js"></script>
+<script type="text/javascript" src="\js\decorate\love1.js"></script>
+
+<script type="text/javascript" src="\js\backtop.js"></script>
+<script type="text/javascript" src="\js\doc.js"></script>
