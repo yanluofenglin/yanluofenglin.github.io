@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <link rel="alternate icon" type="image/png" href="/img/favicon.png">
+    <title>烟络枫林</title>
+    
+<link rel="stylesheet" href="/css/reset.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/css/markdown.css">
+
+    
+<link rel="stylesheet" href="/css/fonts.css">
+
+    
+<link rel="stylesheet" href="/css/toc.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+    <body>
+	<div class="all">
+        <div class="paper">
+            <div class="paper-main">
+                
+                    <div class="post-header">
+    <a class="go-home" href="/">
+        <svg width="8" height="14" viewBox="0 0 8 14">
+            <path d="M7 1L1 7 7 13" stroke="#000" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+	<ul class="post-nav">
+        
+        <li><a href="/">首页</a></li>
+        
+        <li><a href="/archives">归档</a></li>
+        
+        <li><a href="/categories">分类</a></li>
+        
+        <li><a href="/tags">标签</a></li>
+        
+        <li><a href="/about">关于</a></li>
+        
+    </ul>
+</div>
+                
+                <div class="post-main">
+<div class="post-box">
+    
+        
+        <div class="post-title">
+            VScode-设置
+        </div>
+        
+        <div class="post-date">
+            2017-01-01
+        </div>
+	
+</div>
+    
+    <div class="post-md">
+        <h2 id="vscode设置"><a href="#vscode设置" class="headerlink" title="vscode设置"></a>vscode设置</h2><p>1.下载扩展chinese、markdown all in one、markdown pdf、markdownlint、picgo</p>
+<p>2.首选项-设置-常用设置-自动换行-on，设置markdownlint扩展、picgo扩展（打开settings.json复制下面代码）</p>
+<p>{<br>    “workbench.colorTheme”: “Default Light Modern”,&#x2F;&#x2F;主题设置<br>    “editor.minimap.enabled”: false,&#x2F;&#x2F;关闭右侧预览<br>    “editor.wordWrap”: “on”,&#x2F;&#x2F;自动换行<br>    “editor.unicodeHighlight.allowedLocales”: {<br>        “zh-hans”: true<br>    },&#x2F;&#x2F;全角逗号<br>    “markdownlint.config”: {<br>        “default”: true,<br>        “MD033”: {<br>            “allowed_elements”: [“font”,”li”,”table”,”tr”,”td”,”video”,”audio”,”source”,”iframe”,”script”,”span”]<br>        },<br>        “MD041”: false,<br>        “MD034”: false<br>    },&#x2F;&#x2F;设置markdownlint扩展<br>    &#x2F;&#x2F;设置picgo扩展<br>    &#x2F;&#x2F;github图床<br>    “picgo.picBed.github.branch”: “main”,<br>    “picgo.picBed.github.customUrl”: “<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/yanluofenglin/yanluofenglin@main">https://cdn.jsdelivr.net/gh/yanluofenglin/yanluofenglin@main</a>“,<br>    “picgo.picBed.github.path”: “blog&#x2F;“,<br>    “picgo.picBed.current”: “github”,<br>    “picgo.picBed.github.repo”: “yanluofenglin&#x2F;yanluofenglin”,<br>    “picgo.picBed.github.token”: “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”,<br>    “picgo.picBed.uploader”: “github”,<br>    &#x2F;&#x2F;七牛云图床<br>    “picgo.picBed.qiniu.accessKey”: “XckUbms2yHQHQu2W_I6zE13w4YRBlipzTQOF1YsY”,<br>    “picgo.picBed.qiniu.area”: “as0”,<br>    “picgo.picBed.qiniu.bucket”: “typecho-ylfl”,<br>    “picgo.picBed.qiniu.path”: “typecho&#x2F;“,<br>    “picgo.picBed.qiniu.secretKey”: “aLZRx-GXvt_04Lfwi-smv2x4kBvQERNxGXwHIUgs”,<br>    “picgo.picBed.qiniu.url”: “<a target="_blank" rel="noopener" href="https://cdn.ylfl.xyz/">https://cdn.ylfl.xyz</a>“<br>}</p>
+
+    </div>
+    
+        
+        <div>
+            <div class="fixed-box">
+                <div class="toc-list">
+                    <div class="toc-list2">
+                        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#vscode%E8%AE%BE%E7%BD%AE"><span class="toc-text">vscode设置</span></a></li></ol>
+                    </div>
+                </div>
+                <a class="toc-button">
+                    <svg width="14" height="8" viewBox="0 0 14 8">
+                        <path d="M1 1L13 1" stroke="#000" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1 4L13 4" stroke="#000" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1 7L13 7" stroke="#000" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+            <a class="to-top" href="javascript:scrollTo(0,0)" target="_self">
+                <svg width="14" height="8" viewBox="0 0 14 8">
+                        <path d="M1 7L7 1 13 7" stroke="#000" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    
+</div>
+                <div class="footer">
+    <span>Copyright © 2023 Yanluo</span>
+    <span>Theme Designed By <a target="_blank" href="https://yanluofenglin.github.io/">烟络</a></span>
+</div>
+
+<script src="/js/highlight.min.js"></script>
+
+
+<script src="/js/highlightjs-line-numbers.js"></script>
+
+<script>
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
+</script>
+            </div>
+		</div>
+	</div>
+    </body>
+</html>
+<script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.js"></script>
+<script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="\js\decorate\snow2.js"></script>
+<script type="text/javascript" src="\js\decorate\love1.js"></script>
+
+<script type="text/javascript" src="\js\backtop.js"></script>
+<script type="text/javascript" src="\js\toc.js"></script>

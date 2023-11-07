@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+:root{
+    --font-color-0: #867db3;
+    --font-color-1: #000;
+    --font-color-2: #333;
+    --font-color-3: #666;
+    --font-color-4: #999;
+    --font-color-5: #ccc;
+    --font-color-6: #fff;
+    --bg-color-0: #aaa3cc;
+    --bg-color-1: #aaa;
+    --bg-color-2: #bbb;
+    --bg-color-3: #ccc;
+    --bg-color-4: #ddd;
+    --bg-color-5: #eee;
+    --bg-color-6: #fff;
+    --bg-color-7: #fafafa;
+    --line-1: #ccc;
+    --line-2: #ddd;
+}
+::selection {
+    background:var(--bg-color-0);
+    color:var(--font-color-6);
+}
+::-moz-selection {
+    background:var(--bg-color-0);
+    color:var(--font-color-6);
+}
+::-webkit-selection {
+    background:var(--bg-color-0);
+    color:var(--font-color-6);
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+*{
+    margin:0;
+    padding:0;
+}
+ul,ol{
+    list-style: none;
+}
+ul{
+    padding-inline-start: 0;
+}
+p{
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    text-align: justify;
+    /*两端对齐*/
+    /*text-align-last: justify;*/
+    /*最后一行两端对齐*/
+    /*text-indent: 2em; */
+    /*文本缩进2rem*/
+}
+html,body{
+    scroll-behavior: smooth;
+}
+html{
+    height:100%;
+}
+body{
+    min-height:100%;
+    background: linear-gradient(45deg,rgba(246,191,117,0.5),rgba(215,113,133,0.5),rgba(135,102,172,0.5),rgba(65,80,177,0.5));
+    /*background: linear-gradient(200deg,rgba(254,172,94,0.5),rgba(199,121,208,0.5),rgba(75,192,200,0.5));*/
+    /*background: linear-gradient(200deg,#a0cfe4,#e8c37e);*/
+    /*background: #111;*/
+    background-attachment: fixed;
+}
+a:not([class]){
+    text-decoration-skip-ink: auto;
+}
+a{
+    text-decoration: none;
+    color: var(--font-color-1);
+}
+span a{
+    color: var(--font-color-3);
+}
+img,picture{
+    width: auto;
+    max-width: 100%;
+    display: block;
+}
+input,button,textarea,select{
+    font: inherit;
+}
+@media (prefers-reduced-motion: reduce){
+    html:focus-within{
+        scroll-behavior: auto;
+    }
+}
