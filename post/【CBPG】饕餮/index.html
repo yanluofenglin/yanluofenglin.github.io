@@ -8,7 +8,19 @@
 
     
     <title>CBPG饕餮 | 烟络枫林</title>
-
+    <script type="text/javascript" language="javascript">
+      var time;
+      var normar_title=document.title;
+      document.addEventListener('visibilitychange', function () {
+          if (document.visibilityState == 'hidden') {
+               clearTimeout(time);        
+               document.title = '^•༝•^ฅ我藏好了哦~ CBPG饕餮 | 烟络枫林';
+          } else {
+              document.title = '=^𖥦^=被你发现啦~ CBPG饕餮 | 烟络枫林';
+              time=setTimeout(function(){ document.title = normar_title; }, 3000);
+      }
+      });
+    </script>
 
     
 <link rel="stylesheet" href="/css/reset.css">
@@ -24,6 +36,9 @@
 
     
 <link rel="stylesheet" href="/css/toc.css">
+
+
+
 
 <meta name="generator" content="Hexo 6.3.0"></head>
     <body>

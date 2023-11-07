@@ -8,7 +8,19 @@
 
     
     <title>裘振 | 烟络枫林</title>
-
+    <script type="text/javascript" language="javascript">
+      var time;
+      var normar_title=document.title;
+      document.addEventListener('visibilitychange', function () {
+          if (document.visibilityState == 'hidden') {
+               clearTimeout(time);        
+               document.title = '^•༝•^ฅ我藏好了哦~ 裘振 | 烟络枫林';
+          } else {
+              document.title = '=^𖥦^=被你发现啦~ 裘振 | 烟络枫林';
+              time=setTimeout(function(){ document.title = normar_title; }, 3000);
+      }
+      });
+    </script>
 
     
 <link rel="stylesheet" href="/css/reset.css">
@@ -24,6 +36,9 @@
 
     
 <link rel="stylesheet" href="/css/toc.css">
+
+
+
 
 <meta name="generator" content="Hexo 6.3.0"></head>
     <body>
@@ -67,13 +82,13 @@
         </li>
         
         <li>
-            <span><a href="/post/%E5%A4%8D%E7%94%9F%E5%B1%802/">2021.01.01</a></span>
-            <div><a href="/post/%E5%A4%8D%E7%94%9F%E5%B1%802/">复生局2</a></div>
+            <span><a href="/post/%E5%A4%8D%E7%94%9F%E5%B1%801/">2021.01.01</a></span>
+            <div><a href="/post/%E5%A4%8D%E7%94%9F%E5%B1%801/">复生局1</a></div>
         </li>
         
         <li>
-            <span><a href="/post/%E5%A4%8D%E7%94%9F%E5%B1%801/">2021.01.01</a></span>
-            <div><a href="/post/%E5%A4%8D%E7%94%9F%E5%B1%801/">复生局1</a></div>
+            <span><a href="/post/%E5%A4%8D%E7%94%9F%E5%B1%802/">2021.01.01</a></span>
+            <div><a href="/post/%E5%A4%8D%E7%94%9F%E5%B1%802/">复生局2</a></div>
         </li>
         
     </ul>
