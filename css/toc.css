@@ -25,31 +25,22 @@
     transition: background ease-in-out .5s;
     }
 .toc-button svg{
-    width: 14px;
-    height: 8px;
-    margin: 0 auto;
- }
-.toc-button svg path {
-    fill: none;
-    stroke-width: 2; 
-    stroke: #000; 
-    stroke-linecap: round;
-	stroke-linejoin="round"
-    transition:all 1s;    
-}
-.toc-button:active svg path:nth-child(1){
-    stroke:#000;  
-    d:path("M1 1L13 7");
-}
-.toc-button:active svg path:nth-child(2){
-    stroke-width: 100; 
-    opacity: 0; 
-}
-.toc-button:active svg path:nth-child(3){
-    stroke:#000;
-    d:path("M1 7L13 1");
+    width:14px; 
+    height:14px; 
+    stroke:#000; 
+    stroke-width:2; 
+    fill:none; 
+    fill-rule:evenodd; 
+    stroke-linecap:round; 
+    stroke-linejoin:round; 
+    display:block;
+    transition:all 1s;
 }
 
+.toc-button:active svg path{
+    stroke:#000;  
+    d:path("M1 4 13 10 M1 10 13 4");
+}
 
 .toc-list li{
     margin: 0 0 4px;
@@ -63,7 +54,7 @@
 
 .toc-button{
     display: block;
-    padding: 8px 17px 12px 17px;
+    padding: 17px;
     border-radius: 18px;
     background: #fff;
     border: 1px solid #eee;
@@ -78,7 +69,7 @@
 .to-top
 {
     display: block;
-    padding: 8px 17px 12px 17px;
+    padding: 17px;
     border-radius: 18px;
     background: #fff;
     border: 1px solid #eee;
@@ -89,6 +80,15 @@
     //bottom: calc(8vw + 48px + 44px);
 }
 .to-top svg{
+    width:14px; 
+    height:14px; 
+    stroke:#000; 
+    stroke-width:2; 
+    fill:none; 
+    fill-rule:evenodd; 
+    stroke-linecap:round; 
+    stroke-linejoin:round; 
+    display:block;
     transform: translateY(0);
     transition: transform ease-in-out .5s;
 }

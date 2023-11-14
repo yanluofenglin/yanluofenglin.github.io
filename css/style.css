@@ -78,8 +78,7 @@
     font-size: 1rem;
 }
 .post-header .go-home{
-    display: block;
-    padding: 12px 20px 8px;
+    padding: 17px;
     border-radius: 18px;
     background: #fff;
     border: 1px solid #eee;
@@ -91,6 +90,15 @@
     transition: background ease-in-out .5s;
 }
 .post-header .go-home svg{
+    width:14px; 
+    height:14px; 
+    stroke:#000; 
+    stroke-width:2; 
+    fill:none; 
+    fill-rule:evenodd; 
+    stroke-linecap:round; 
+    stroke-linejoin:round; 
+    display:block;
     transform: translateX(0);
     transition: transform ease-in-out .5s;
 }
