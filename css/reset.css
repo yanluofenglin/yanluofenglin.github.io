@@ -75,7 +75,12 @@ a{
     text-decoration: none;
     color: var(--font-color-1);
 }
+a:hover{
+    color: var(--font-color-0);
+    transition: color ease-in-out .5s;
+}
 span a{
+    font-size: 0.875rem;
     color: var(--font-color-3);
 }
 img,picture{
@@ -91,3 +96,5 @@ input,button,textarea,select{
         scroll-behavior: auto;
     }
 }
+
+
