@@ -310,11 +310,17 @@
     background: var(--bg-color-6);
 }
 .archive li span{
-    width: 108px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 96px;
     color: var(--font-color-3);
     margin-left: 1vw;
 }
 .archive li div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
     flex: 0 1 calc(100% - 108px - 2vw);
     margin-right: 1vw;
 }
@@ -339,16 +345,19 @@
     background: var(--bg-color-6);
 }
 .categories li span{
+    display: flex;
+    justify-content: right;
+    align-items: center;
     width: 36px;
     color: var(--font-color-3);
     margin-right: 1vw;
 }
 .categories li div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
     flex: 0 1 calc( 100% - 36px - 2vw);
     margin-left: 1vw;
-}
-.categories li span a{
-    float: right;
 }
 
 .tags{
