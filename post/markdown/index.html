@@ -80,34 +80,48 @@
 </div>
     
     <div class="post-md">
-        <h2 id="标题2"><a href="#标题2" class="headerlink" title="标题2"></a>标题2</h2><ul>
-<li>这是一个列表</li>
-<li>这是一个列表</li>
-<li>这是一个列表</li>
-</ul>
-<ol>
-<li>这是一个列表</li>
-<li>这是一个列表</li>
-<li>这是一个列表</li>
-</ol>
-<blockquote>
-<p>引用</p>
-<blockquote>
-<p>引用</p>
-</blockquote>
-</blockquote>
-<p><a href="index">这是一个链接</a></p>
+        <h2 id="标题2"><a href="#标题2" class="headerlink" title="标题2"></a>标题2</h2><p>这是一段文本，而<strong>我是需要加粗的内容</strong></p>
+<p>这是一段文本，而<em>我是需要斜体的内容</em></p>
+<p>这是一段文本，<del>而我是需要删除的内容</del></p>
+<p>而你，我的朋友，你才是<em><strong>真正的英雄</strong></em></p>
+<p>我是转义的*符号，可以直接展示</p>
 <hr>
 <p>上面是一条线</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">echoHelloworld</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p><input disabled="" type="checkbox"> 
+我是未完成的任务</p>
+</li>
+<li><p><input checked="" disabled="" type="checkbox"> 
+我是已完成的任务</p>
+</li>
+<li><p>一级列表</p>
+</li>
+<li><p>一级列表</p>
+<ul>
+<li>二级列表<ul>
+<li>三级列表</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>一级引用</p>
+<p>一级引用</p>
+<blockquote>
+<p>二级引用</p>
+<blockquote>
+<p>三级引用</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><a href="%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80">链接文本</a></p>
+<p><img src="/%E5%9B%BE%E7%89%87%E5%9C%B0%E5%9D%80" alt="图片描述" title="图片名称，可选"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">代码</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line">Plaintextinacodeblock</span><br></pre></td></tr></table></figure>
-
-<p><code>段内代码</code>段内代码<code>段内代码</code></p>
-<p>在文字前后加一个星号是<em>斜体</em>，<br>加两个星号是<strong>粗体</strong>，<br>加两个波浪线是<del>删除</del>。</p>
 <p>文字<sup>上标文字</sup></p>
 <p>文字<sub>下标文字</sub></p>
-<p><u>文字</u></p>
+<p><u>下划线文字</u></p>
 <table>
 <thead>
 <tr>
@@ -156,40 +170,12 @@
 <td align="right"></td>
 </tr>
 </tbody></table>
-<p>这里是<strong>加粗</strong></p>
-<p>这里是<em>斜体</em></p>
-<p>这里是<del>删除</del></p>
-<blockquote>
-<p>引用块</p>
-</blockquote>
-<p><code>代码</code></p>
-<ul>
-<li>黄瓜</li>
-<li>玉米</li>
-<li>茄子</li>
-</ul>
-<ol>
-<li>黄瓜</li>
-<li>玉米</li>
-<li>茄子</li>
-</ol>
-<ul>
-<li>段落一<blockquote>
-<p>区块标记一</p>
-</blockquote>
-</li>
-<li>段落二<blockquote>
-<p>区块标记二</p>
-</blockquote>
-</li>
-</ul>
+<p><code>段内代码</code>段内代码<code>段内代码</code></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="built_in">echo</span> Hello world</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Plain text in a code block</span><br></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line">Plain text in a code block</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="built_in">range</span>(<span class="number">2000</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> a:</span><br><span class="line">  <span class="keyword">if</span> i % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">    <span class="keyword">continue</span></span><br><span class="line">  <span class="built_in">print</span>(i + <span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-
-  <figure class="highlight plaintext"><figcaption><span>[title] [lang:language] [url] [link text] [additional options]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">code snippet</span><br></pre></td></tr></table></figure>
 
     </div>
     
