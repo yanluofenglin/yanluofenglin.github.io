@@ -1,0 +1,109 @@
+@charset "utf-8";
+@media (prefers-reduced-motion: reduce){
+    html:focus-within,body:focus-within{
+        scroll-behavior: auto;/*瞬间滚动*/
+    }
+}
+:root{
+    --color-0: #000;/*0*/
+    --color-1: #333;/*20*/
+    --color-2: #666;/*40*//*浅色字体*/
+    --color-3: #999;/*60*/
+    --color-4: #ccc;/*80*//*线和超浅字体*/
+    --color-5: #fff;/*100*//*白色背景和hover字体*/
+    --color-6: #f2f2f2;/*95*//*灰色背景*/
+    --color-7: #fafafa;/*98*//*间隔用的灰色背景*/
+    --color-8: #aaa3cc;/*250.20.80*//*hover背景*/
+    --color-9: #867db3;/*250.30.70*//*hover字体*/
+}
+::selection {
+    background:var(--color-8);
+    color:var(--color-5);
+}
+::-moz-selection {
+    background:var(--color-8);
+    color:var(--color-5);
+}
+::-webkit-selection {
+    background:var(--color-8);
+    color:var(--color-5);
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+*{
+    margin:0;
+    padding:0;
+    word-break: break-all;
+}
+html,body{
+    scroll-behavior: smooth;/*平滑滚动*/
+}
+html{
+    height:100%;
+}
+body{
+    min-height:100%;
+    background: linear-gradient(45deg,rgba(246,191,117,0.5),rgba(215,113,133,0.5),rgba(135,102,172,0.5),rgba(65,80,177,0.5));
+    /*background: linear-gradient(200deg,rgba(254,172,94,0.5),rgba(199,121,208,0.5),rgba(75,192,200,0.5));*/
+    /*background: linear-gradient(200deg,#a0cfe4,#e8c37e);*/
+    /*background: #111;*/
+    background-attachment: fixed;
+}
+p{
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    text-align: justify;/*两端对齐*/
+    /*text-align-last: justify;*//*最后一行两端对齐*/
+    /*text-indent: 2em; *//*文本缩进2rem*/
+}
+a:not([class]){
+    text-decoration-skip-ink: auto;
+}
+a{
+    text-decoration: none;
+    color: var(--color-0);
+}
+a:hover{
+    color: var(--color-9);
+    transition: color ease-in-out .5s;
+}
+span a{
+    font-size: 0.875rem;
+    color: var(--color-2);
+}
+img,picture{
+    width: auto;
+    max-width: 100%;
+    display: block;
+}
+
+ul,ol{
+    list-style: none;
+}
+ul{
+    padding-inline-start: 0;
+}
+
+input,button,textarea,select{
+    font: inherit;
+}
+
+figure{
+    display: block;
+    overflow-x: auto;
+    background: var(--color-6);
+    margin: 12px 0;
+    padding: 12px 0;
+}
+svg{
+    width:14px; 
+    height:14px; 
+    stroke:var(--color-0); 
+    stroke-width:2; 
+    fill:none; 
+    fill-rule:evenodd; 
+    stroke-linecap:round; 
+    stroke-linejoin:round; 
+    display:block;
+}

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport" />
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    
+    <title>Blender快捷键 | 烟络枫林</title>
+    <script language="javascript">
+        var time;
+        var normar_title = document.title;
+        document.addEventListener('visibilitychange', function () {
+            if (document.visibilityState == 'hidden') {
+                clearTimeout(time);        
+                document.title = '^•༝•^ฅ我藏好了哦~ Blender快捷键 | 烟络枫林';
+            } else {
+                document.title = '=^𖥦^=被你发现啦~ Blender快捷键 | 烟络枫林';
+                time = setTimeout(function() { document.title = normar_title; }, 3000);
+            }
+        });
+    </script>
+
+    
+<link rel="stylesheet" href="/css/reset.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/css/markdown.css">
+
+    
+<link rel="stylesheet" href="/css/fonts.css">
+
+    
+<link rel="stylesheet" href="/css/toc.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+    <body>
+	<div class="all">
+        <div class="paper">
+            <div class="paper-main">
+                
+                    <div class="post-header">
+    <a class="go-home" href="/">
+        <svg viewBox="0 0 14 14">
+            <path d="M10 1 4 7 10 13"/>
+        </svg>
+    </a>
+	<ul class="post-nav">
+        
+        <li><a href="/">首页</a></li>
+        
+        <li><a href="/archives">归档</a></li>
+        
+        <li><a href="/categories">分类</a></li>
+        
+        <li><a href="/tags">标签</a></li>
+        
+        <li><a href="/about">关于</a></li>
+        
+    </ul>
+</div>
+                
+                <div class="post-main">
+<div class="post-box">
+    
+        
+        <div class="post-title">
+            Blender快捷键
+        </div>
+        
+        <div class="post-date">
+            2023-01-01
+        </div>
+	
+</div>
+    
+    <div class="post-md">
+        <table>
+<thead>
+<tr>
+<th>视图操作</th>
+<th></th>
+<th>常用操作</th>
+<th></th>
+<th>编辑模式一建模工具</th>
+<th></th>
+<th>编辑模式一辅助工具</th>
+<th></th>
+<th>雕刻</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>四视图</td>
+<td>Ctrl+Alt+Q</td>
+<td>创建物体</td>
+<td>Shift+A</td>
+<td>挤出工具栏</td>
+<td>Alt+E</td>
+<td>填充</td>
+<td>F</td>
+<td>加&#x2F;减雕刻</td>
+<td>按住Ctrl为减</td>
+</tr>
+<tr>
+<td>顶视图</td>
+<td>小键盘7</td>
+<td>删除</td>
+<td>X</td>
+<td>挤出至游标或添加</td>
+<td>Ctrl+鼠标右键</td>
+<td>连接顶点为路径</td>
+<td>J</td>
+<td>光滑</td>
+<td>按住Shift</td>
+</tr>
+<tr>
+<td>前视图</td>
+<td>小键盘1</td>
+<td>功能搜索</td>
+<td>F3</td>
+<td>插入</td>
+<td>I</td>
+<td>边线折痕</td>
+<td>Shift+E</td>
+<td>笔刷大小</td>
+<td>F</td>
+</tr>
+<tr>
+<td>侧视图</td>
+<td>小键盘3</td>
+<td>移动</td>
+<td>G</td>
+<td>倒角</td>
+<td>Ctrl+B</td>
+<td>展开UV</td>
+<td>U</td>
+<td>笔刷强度</td>
+<td>Shift+F</td>
+</tr>
+<tr>
+<td>相机视图</td>
+<td>小键盘0</td>
+<td>旋转</td>
+<td>R</td>
+<td>顶点倒角</td>
+<td>Shift+Ctrl+B</td>
+<td>合并菜单</td>
+<td>M</td>
+<td>遮罩模式</td>
+<td>M</td>
+</tr>
+<tr>
+<td>透视&#x2F;正交视图</td>
+<td>小键盘5</td>
+<td>万向旋转</td>
+<td>RR</td>
+<td>环切</td>
+<td>Ctrl+R</td>
+<td>分离菜单</td>
+<td>P</td>
+<td>框选遮罩</td>
+<td>B</td>
+</tr>
+<tr>
+<td>框显所选</td>
+<td>小键盘.</td>
+<td>缩放</td>
+<td>S</td>
+<td>偏移环切边</td>
+<td>Shift+Ctrl+R</td>
+<td>拆分</td>
+<td>Y</td>
+<td>套索遮罩</td>
+<td>Ctrl+Shift+鼠标左键</td>
+</tr>
+<tr>
+<td>框显全部</td>
+<td>Home</td>
+<td>锁定轴向</td>
+<td>X&#x2F;Y&#x2F;Z</td>
+<td>切割</td>
+<td>K</td>
+<td>拆分菜单</td>
+<td>Alt+M</td>
+<td>清除遮罩</td>
+<td>Alt+M</td>
+</tr>
+<tr>
+<td>局部视图</td>
+<td>&#x2F;</td>
+<td>锁定平面</td>
+<td>Shift+X&#x2F;Y&#x2F;Z</td>
+<td>滑移</td>
+<td>GG</td>
+<td>交互镜像</td>
+<td>Ctrl+M</td>
+<td>自由线笔刷</td>
+<td>X</td>
+</tr>
+<tr>
+<td>第一人称模式</td>
+<td>Shift+~</td>
+<td>重复最后操作</td>
+<td>Shift+R</td>
+<td>法向缩放</td>
+<td>Alt+S</td>
+<td>法向菜单</td>
+<td>Alt+N</td>
+<td>粘塑笔刷</td>
+<td>C</td>
+</tr>
+<tr>
+<td>视图左侧工具栏</td>
+<td>T</td>
+<td>对应属性归零</td>
+<td>Alt+G&#x2F;R&#x2F;S</td>
+<td>切变</td>
+<td>Shift+Ctrl+Alt+S</td>
+<td>面三角化</td>
+<td>Ctrl+T</td>
+<td>折痕笔刷</td>
+<td>Shift+C</td>
+</tr>
+<tr>
+<td>视图右侧属性栏</td>
+<td>N</td>
+<td>吸附</td>
+<td>Ctrl</td>
+<td>球形化</td>
+<td>Shift+Alt+S</td>
+<td>三角面转四边面</td>
+<td>Alt+J</td>
+<td>平滑笔刷</td>
+<td>Shift+T</td>
+</tr>
+<tr>
+<td>当前窗口最大化</td>
+<td>Ctrl+空格</td>
+<td>着色方式切换</td>
+<td>Z</td>
+<td>断离区域</td>
+<td>V</td>
+<td>添加到顶点组</td>
+<td>Ctrl+G</td>
+<td>抓取笔刷</td>
+<td>G</td>
+</tr>
+<tr>
+<td>视图对齐活动项</td>
+<td>Shift+7&#x2F;1&#x2F;3</td>
+<td>线框模式</td>
+<td>Shift+Z</td>
+<td>断离并填充</td>
+<td>Alt+V</td>
+<td>钩挂菜单</td>
+<td>Ctrl+H</td>
+<td>动态拓补雕刻</td>
+<td>Ctrl+D</td>
+</tr>
+<tr>
+<td>(Ctrl+Shift为相反方向)</td>
+<td></td>
+<td>透视模式</td>
+<td>Alt+Z</td>
+<td>断离边线</td>
+<td>Alt+D</td>
+<td>重置蒙皮尺寸</td>
+<td>Ctrl+A</td>
+<td>笔触类型</td>
+<td>E</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>选择工具</th>
+<th></th>
+<th>物体模式</th>
+<th></th>
+<th>节点编辑器</th>
+<th></th>
+<th>骨骼编辑模式</th>
+<th></th>
+<th>骨骼姿态模式</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>移动游标</td>
+<td>Shift+鼠标右键</td>
+<td>复制</td>
+<td>Shift+D</td>
+<td>删除节点</td>
+<td>X</td>
+<td>添加新骨骼</td>
+<td>Shift+A</td>
+<td>姿态应用</td>
+<td>CTRL+A</td>
+</tr>
+<tr>
+<td>全选&#x2F;取消全选</td>
+<td>A&#x2F;AA</td>
+<td>关联复制</td>
+<td>Alt+D</td>
+<td>连接节点</td>
+<td>F</td>
+<td>挤出骨骼</td>
+<td>E</td>
+<td>插入关键帧</td>
+<td>I</td>
+</tr>
+<tr>
+<td>框选</td>
+<td>B</td>
+<td>合并物体</td>
+<td>Ctrl+J</td>
+<td>切断连线</td>
+<td>Ctrl+右键划断</td>
+<td>扭转骨骼</td>
+<td>Ctrl+R</td>
+<td>删除当前关键帧</td>
+<td>Alt+I</td>
+</tr>
+<tr>
+<td>笔刷选择</td>
+<td>C</td>
+<td>隐蔽选择物体</td>
+<td>H</td>
+<td>删除节点并重连</td>
+<td>Ctrl+X</td>
+<td>清除扭转</td>
+<td>ALt+R</td>
+<td>镜像粘贴姿态</td>
+<td>Ctrl+Shift+V</td>
+</tr>
+<tr>
+<td>套索选择</td>
+<td>Ctrl+鼠标右键</td>
+<td>隐楚未选物体</td>
+<td>Shift+H</td>
+<td>连线上添加点</td>
+<td>Shift+右键划线</td>
+<td>重新计算转动</td>
+<td>Shift+N</td>
+<td>添加到姿态库</td>
+<td>Shift+L</td>
+</tr>
+<tr>
+<td>反选</td>
+<td>Ctrl+I</td>
+<td>显示隐藏物体</td>
+<td>Alt+H</td>
+<td>禁用&#x2F;启用节点</td>
+<td>M</td>
+<td>对齐骨骼</td>
+<td>Ctrl+Alt+A</td>
+<td>浏览姿态库</td>
+<td>Ctrl+L</td>
+</tr>
+<tr>
+<td>循环选择</td>
+<td>Alt+左键</td>
+<td>关联菜单</td>
+<td>Ctrl+L</td>
+<td>加入到新框</td>
+<td>Ctrl+J</td>
+<td>切换骨骼方向</td>
+<td>Alt+F</td>
+<td>重命名姿态</td>
+<td>Ctrl+Shift+L</td>
+</tr>
+<tr>
+<td>并排选择</td>
+<td>Ctrl+Alt+左键</td>
+<td>衰减编辑开关</td>
+<td>O</td>
+<td>移出框外</td>
+<td>Alt+P</td>
+<td>骨骼属性设置</td>
+<td>Shift+W</td>
+<td>删除姿态</td>
+<td>Alt+L</td>
+</tr>
+<tr>
+<td>选择相似</td>
+<td>Shift+G</td>
+<td>应用菜单</td>
+<td>Ctrl+A</td>
+<td>打组</td>
+<td>Ctrl+G</td>
+<td>关节间创建新骨骼</td>
+<td>F</td>
+<td>骨骼组</td>
+<td>Ctrl+G</td>
+</tr>
+<tr>
+<td>选择相连元素</td>
+<td>L</td>
+<td>设置父子关系</td>
+<td>Ctrl+P</td>
+<td>解组</td>
+<td>Alt+G</td>
+<td>镜像骨骼</td>
+<td>Ctrl+M</td>
+<td>添加IK</td>
+<td>Shift+I</td>
+</tr>
+<tr>
+<td>扩展&#x2F;缩减选区</td>
+<td>Ctrl+加&#x2F;减号键</td>
+<td>取消父子关系</td>
+<td>Alt+P</td>
+<td>编辑组</td>
+<td>Tab</td>
+<td>(骨骼镜像操作一</td>
+<td></td>
+<td>添加约束</td>
+<td>Ctrl+Shift+C</td>
+</tr>
+<tr>
+<td>选择镜像</td>
+<td>Shift+Alt+M</td>
+<td>移动到集合</td>
+<td>M</td>
+<td>移动背景</td>
+<td>Alt+鼠标中键</td>
+<td>定要按R、L的命名</td>
+<td></td>
+<td>清除约束</td>
+<td>Ctrl+Alt+C</td>
+</tr>
+<tr>
+<td>最短路径</td>
+<td>Ctrl+左键</td>
+<td>添加表面细分</td>
+<td>Ctrl+2</td>
+<td>放大背景</td>
+<td>Alt+V</td>
+<td>规则来命名)</td>
+<td></td>
+<td>重命名</td>
+<td>F2</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>缩小背景</td>
+<td>V</td>
+<td></td>
+<td></td>
+<td>姿态补间器</td>
+<td>Shift+E</td>
+</tr>
+</tbody></table>
+<h3 id="M3工具常用快捷键-辣椒分支版本"><a href="#M3工具常用快捷键-辣椒分支版本" class="headerlink" title="M3工具常用快捷键(辣椒分支版本)"></a>M3工具常用快捷键(辣椒分支版本)</h3><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>智能点&#x2F;线&#x2F;面</td>
+<td>Ctrl+1&#x2F;2&#x2F;3</td>
+<td>切换平滑工具</td>
+<td>Alt+下翻页</td>
+<td>对齐饼菜单</td>
+<td>Alt+A</td>
+<td>着色饼菜单</td>
+<td>上翻页</td>
+<td>界面饼菜单</td>
+<td>Tab</td>
+</tr>
+<tr>
+<td>一键镜像物体</td>
+<td>Shinf+Alt+X&#x2F;Y&#x2F;Z</td>
+<td>滑动延伸工具</td>
+<td>Shift+Alt+1(F)</td>
+<td>游标饼菜单</td>
+<td>Shift+S</td>
+<td>视图饼菜单</td>
+<td>下翻页</td>
+<td>坐标饼菜单</td>
+<td>Shift+上翻页</td>
+</tr>
+<tr>
+<td>清理工具合集</td>
+<td>Ctrl+4</td>
+<td>快速打组工具</td>
+<td>Ctrl+G</td>
+<td>保存饼菜单</td>
+<td>Ctrl+S</td>
+<td>集合饼菜单</td>
+<td>Shift+C</td>
+<td>吸附饼菜单</td>
+<td>Shift+下翻页</td>
+</tr>
+</tbody></table>
+
+    </div>
+    
+        
+        <div class="toc-list">
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#M3%E5%B7%A5%E5%85%B7%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE-%E8%BE%A3%E6%A4%92%E5%88%86%E6%94%AF%E7%89%88%E6%9C%AC"><span class="toc-text">M3工具常用快捷键(辣椒分支版本)</span></a></li></ol>
+        </div>
+        <div class="buttonbox">
+            <a class="toc-button">
+                <svg viewBox="0 0 14 14">
+                    <path class="toc-button-n" d="
+                    M1 4 13 4 M1 7 13 7 M1 10 13 10"/>
+                </svg>
+            </a>
+            <a class="to-top" href="javascript:scrollTo(0,0)" target="_self">
+                <svg viewBox="0 0 14 14">
+                    <path d="M1 10 7 4 13 10"/>
+                </svg>
+            </a>
+        </div>
+        
+    
+</div>
+                <div class="footer">
+    <span>Copyright © 2023 Yanluo</span>
+    <span>Theme Designed By <a target="_blank" href="https://yanluofenglin.github.io/">烟络</a></span>
+</div>
+
+<!-- 加载 Highlight.js CSS 文件 -->
+
+
+<!-- 加载 Highlight.js 库 -->
+
+<script src="/js/highlight.min.js"></script>
+
+
+<script src="/js/javascript.min.js"></script>
+
+
+<!-- 加载行号插件 -->
+
+
+<script src="/js/highlightjs-line-numbers.min.js"></script>
+
+
+<script>
+    hljs.highlight();
+    hljs.initLineNumbersOnLoad();
+</script>
+
+            </div>
+		</div>
+	</div>
+    </body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/decorate/snow2.js"></script>
+<script src="/js/decorate/love1.js"></script>
+
+<script src="/js/toc.js"></script>

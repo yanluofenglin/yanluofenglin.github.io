@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport" />
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    
+    <title>Hexo | 烟络枫林</title>
+    <script language="javascript">
+        var time;
+        var normar_title = document.title;
+        document.addEventListener('visibilitychange', function () {
+            if (document.visibilityState == 'hidden') {
+                clearTimeout(time);        
+                document.title = '^•༝•^ฅ我藏好了哦~ Hexo | 烟络枫林';
+            } else {
+                document.title = '=^𖥦^=被你发现啦~ Hexo | 烟络枫林';
+                time = setTimeout(function() { document.title = normar_title; }, 3000);
+            }
+        });
+    </script>
+
+    
+<link rel="stylesheet" href="/css/reset.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/css/markdown.css">
+
+    
+<link rel="stylesheet" href="/css/fonts.css">
+
+    
+<link rel="stylesheet" href="/css/toc.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+    <body>
+	<div class="all">
+        <div class="paper">
+            <div class="paper-main">
+                
+                    <div class="post-header">
+    <a class="go-home" href="/">
+        <svg viewBox="0 0 14 14">
+            <path d="M10 1 4 7 10 13"/>
+        </svg>
+    </a>
+	<ul class="post-nav">
+        
+        <li><a href="/">首页</a></li>
+        
+        <li><a href="/archives">归档</a></li>
+        
+        <li><a href="/categories">分类</a></li>
+        
+        <li><a href="/tags">标签</a></li>
+        
+        <li><a href="/about">关于</a></li>
+        
+    </ul>
+</div>
+                
+                <div class="post-main">
+<div class="post-box">
+    
+        
+        <div class="post-title">
+            Hexo
+        </div>
+        
+        <div class="post-date">
+            2017-01-01
+        </div>
+	
+</div>
+    
+    <div class="post-md">
+        <h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>选择需要的版本下载，下载后安装一直默认下一步。</p>
+<h2 id="打开cmd命令行执行验证是否安装成功"><a href="#打开cmd命令行执行验证是否安装成功" class="headerlink" title="打开cmd命令行执行验证是否安装成功"></a>打开cmd命令行执行验证是否安装成功</h2><p>win+r,cmd<br>node -v<br>npm -v<br>git –version</p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><ul>
+<li>git命令安装hexo：npm install hexo-cli -g或npm install hexo</li>
+<li>git命令卸载hexo：npm uninstall hexo-cli -g</li>
+<li>git命令显示hexo版本：hexo version&#x3D;hexo v</li>
+<li>git命令升级hexo：npm update hexo</li>
+<li>git命令初始化hexo：hexo init blog 创建一个新的名为blog的文件夹并初始化生成一个hexo文件</li>
+</ul>
+<h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><ul>
+<li>安装自动分类：npm install hexo-auto-category –save</li>
+<li>安装部署工具：npm install hexo-deployer-git –save</li>
+</ul>
+<h2 id="部署git"><a href="#部署git" class="headerlink" title="部署git"></a>部署git</h2><ul>
+<li>config.yml找到Deploymen修改<br>deploy:<br>type: git<br>repository: <a target="_blank" rel="noopener" href="https://github.com/yanluofenglin/yanluofenglin.github.io.git">https://github.com/yanluofenglin/yanluofenglin.github.io.git</a><br>branch: main</li>
+</ul>
+<h2 id="密匙注册添加"><a href="#密匙注册添加" class="headerlink" title="密匙注册添加"></a>密匙注册添加</h2><ul>
+<li>创建SSH密钥：ssh-keygen -t rsa -C <a href="mailto:&#121;&#x61;&#110;&#x6c;&#117;&#111;&#x66;&#x65;&#x6e;&#x67;&#x6c;&#x69;&#x6e;&#x40;&#111;&#x75;&#116;&#x6c;&#111;&#111;&#107;&#46;&#x63;&#x6f;&#109;">&#121;&#x61;&#110;&#x6c;&#117;&#111;&#x66;&#x65;&#x6e;&#x67;&#x6c;&#x69;&#x6e;&#x40;&#111;&#x75;&#116;&#x6c;&#111;&#111;&#107;&#46;&#x63;&#x6f;&#109;</a>，密码：Qq19930906.</li>
+<li>运行cat ~&#x2F;.ssh&#x2F;id_rsa.pub，然后完整的复制生成的字符串，最后面的邮箱不要复制。</li>
+<li>打开GitHub-&gt;点击头像-&gt;setting-&gt;SSH adn GPG keys-&gt;New SSh key</li>
+<li>输入title、把刚才复制的那段公钥粘贴到key中保存</li>
+<li>在GitHub显示已经添加成功之后，运行ssh -T <a href="mailto:&#x67;&#105;&#116;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#x63;&#111;&#109;">&#x67;&#105;&#116;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#x63;&#111;&#109;</a>，然后输入yse</li>
+<li>如果你看到 Permission denied (publickey). 就说明你失败了。如果你看到 Hi XXX! You’ve successfully authenticated, but GitHub does not provide shell access.那就说明你成功了。</li>
+</ul>
+<h2 id="密匙尽在电脑上配置"><a href="#密匙尽在电脑上配置" class="headerlink" title="密匙尽在电脑上配置"></a>密匙尽在电脑上配置</h2><ul>
+<li>把文件复制到C:\用户\admin</li>
+<li>git config –global user.name “yanluofenglin”</li>
+<li>git config –global user.email <a href="mailto:&#x79;&#97;&#110;&#108;&#x75;&#111;&#x66;&#x65;&#x6e;&#103;&#x6c;&#x69;&#110;&#x40;&#111;&#117;&#x74;&#108;&#x6f;&#111;&#107;&#x2e;&#x63;&#111;&#x6d;">&#x79;&#97;&#110;&#108;&#x75;&#111;&#x66;&#x65;&#x6e;&#103;&#x6c;&#x69;&#110;&#x40;&#111;&#117;&#x74;&#108;&#x6f;&#111;&#107;&#x2e;&#x63;&#111;&#x6d;</a></li>
+<li>运行ssh -T <a href="mailto:&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#x2e;&#x63;&#x6f;&#109;">&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#x2e;&#x63;&#x6f;&#109;</a>，然后输入yse</li>
+<li>如果你看到 Permission denied (publickey). 就说明你失败了。如果你看到 Hi XXX! You’ve successfully authenticated, but GitHub does not provide shell access.那就说明你成功了。</li>
+</ul>
+<h2 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h2><ul>
+<li>新建一篇标题为name的页面：hexo new page “name”</li>
+<li>新建一篇标题为name的文章：hexo new “name”</li>
+<li>新建一篇标题为name的草稿：hexo new draft “name”</li>
+<li>发表一篇标题为name的草稿：hexo publish “name”</li>
+<li>清除缓存文件db.json和已生成的静态文件public：hexo clean</li>
+<li>生成网站静态文件到默认设置的public文件夹：hexo g&#x3D;hexo generate</li>
+<li>自动生成网站静态文件，并部署到设定的仓库：hexo d&#x3D;hexo deploy</li>
+<li>启动服务：hexo server或hexo s</li>
+<li>hexo cl &amp;&amp; hexo g &amp;&amp; hexo d&#x3D;hexo cl -g -d</li>
+<li>hexo cl &amp;&amp; hexo g &amp;&amp; hexo s&#x3D;hexo cl -g -s</li>
+</ul>
+<h2 id="power-shell常用命令"><a href="#power-shell常用命令" class="headerlink" title="power shell常用命令"></a>power shell常用命令</h2><p>Remove-Item -Path “D:\0库\OneDrive\博客\myblog\public” -Recurse -Force<br>Remove-Item -Path “D:\0库\OneDrive\博客\myblog.deploy_git” -Recurse -Force</p>
+<p>hexo cl<br>hexo g<br>hexo s</p>
+<p>hexo cl<br>hexo g<br>hexo d</p>
+<h2 id="重新配置环境变量nodejs"><a href="#重新配置环境变量nodejs" class="headerlink" title="重新配置环境变量nodejs"></a>重新配置环境变量nodejs</h2><p>在nodejs安装文件夹新建文件夹node_cache、node_global</p>
+<p>win+r,cmd<br>npm config set cache “[文件夹名称]”<br>npm config set prefix “[文件夹名称]”</p>
+<p>例如：<br>npm config set cache “J:\Program Files\nodejs\node_cache”<br>npm config set prefix “J:\Program Files\nodejs\node_global”</p>
+<h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><p>例如：<br>J:\Program Files\nodejs\node_cache<br>J:\Program Files\nodejs\node_global<br>J:\Program Files\nodejs\node_modules<br>J:\Program Files\nodejs\node_modules\npm<br>J:\Program Files\nodejs\node_modules\npm\bin</p>
+
+    </div>
+    
+        
+        <div class="toc-list">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Node-js"><span class="toc-text">安装Node.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%93%E5%BC%80cmd%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%89%A7%E8%A1%8C%E9%AA%8C%E8%AF%81%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F"><span class="toc-text">打开cmd命令行执行验证是否安装成功</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85hexo"><span class="toc-text">安装hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6"><span class="toc-text">安装插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2git"><span class="toc-text">部署git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%86%E5%8C%99%E6%B3%A8%E5%86%8C%E6%B7%BB%E5%8A%A0"><span class="toc-text">密匙注册添加</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%86%E5%8C%99%E5%B0%BD%E5%9C%A8%E7%94%B5%E8%84%91%E4%B8%8A%E9%85%8D%E7%BD%AE"><span class="toc-text">密匙尽在电脑上配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%91%E5%B8%83"><span class="toc-text">发布</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#power-shell%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-text">power shell常用命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E6%96%B0%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8Fnodejs"><span class="toc-text">重新配置环境变量nodejs</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-text">配置环境变量</span></a></li></ol>
+        </div>
+        <div class="buttonbox">
+            <a class="toc-button">
+                <svg viewBox="0 0 14 14">
+                    <path class="toc-button-n" d="
+                    M1 4 13 4 M1 7 13 7 M1 10 13 10"/>
+                </svg>
+            </a>
+            <a class="to-top" href="javascript:scrollTo(0,0)" target="_self">
+                <svg viewBox="0 0 14 14">
+                    <path d="M1 10 7 4 13 10"/>
+                </svg>
+            </a>
+        </div>
+        
+    
+</div>
+                <div class="footer">
+    <span>Copyright © 2023 Yanluo</span>
+    <span>Theme Designed By <a target="_blank" href="https://yanluofenglin.github.io/">烟络</a></span>
+</div>
+
+<!-- 加载 Highlight.js CSS 文件 -->
+
+
+<!-- 加载 Highlight.js 库 -->
+
+<script src="/js/highlight.min.js"></script>
+
+
+<script src="/js/javascript.min.js"></script>
+
+
+<!-- 加载行号插件 -->
+
+
+<script src="/js/highlightjs-line-numbers.min.js"></script>
+
+
+<script>
+    hljs.highlight();
+    hljs.initLineNumbersOnLoad();
+</script>
+
+            </div>
+		</div>
+	</div>
+    </body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/decorate/snow2.js"></script>
+<script src="/js/decorate/love1.js"></script>
+
+<script src="/js/toc.js"></script>

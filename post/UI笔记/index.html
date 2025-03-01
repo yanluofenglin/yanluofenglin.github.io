@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport" />
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    
+    <title>UI笔记 | 烟络枫林</title>
+    <script language="javascript">
+        var time;
+        var normar_title = document.title;
+        document.addEventListener('visibilitychange', function () {
+            if (document.visibilityState == 'hidden') {
+                clearTimeout(time);        
+                document.title = '^•༝•^ฅ我藏好了哦~ UI笔记 | 烟络枫林';
+            } else {
+                document.title = '=^𖥦^=被你发现啦~ UI笔记 | 烟络枫林';
+                time = setTimeout(function() { document.title = normar_title; }, 3000);
+            }
+        });
+    </script>
+
+    
+<link rel="stylesheet" href="/css/reset.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/css/markdown.css">
+
+    
+<link rel="stylesheet" href="/css/fonts.css">
+
+    
+<link rel="stylesheet" href="/css/toc.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+    <body>
+	<div class="all">
+        <div class="paper">
+            <div class="paper-main">
+                
+                    <div class="post-header">
+    <a class="go-home" href="/">
+        <svg viewBox="0 0 14 14">
+            <path d="M10 1 4 7 10 13"/>
+        </svg>
+    </a>
+	<ul class="post-nav">
+        
+        <li><a href="/">首页</a></li>
+        
+        <li><a href="/archives">归档</a></li>
+        
+        <li><a href="/categories">分类</a></li>
+        
+        <li><a href="/tags">标签</a></li>
+        
+        <li><a href="/about">关于</a></li>
+        
+    </ul>
+</div>
+                
+                <div class="post-main">
+<div class="post-box">
+    
+        
+        <div class="post-title">
+            UI笔记
+        </div>
+        
+        <div class="post-date">
+            2023-01-01
+        </div>
+	
+</div>
+    
+    <div class="post-md">
+        <h2 id="UI文件命名规范常用字"><a href="#UI文件命名规范常用字" class="headerlink" title="UI文件命名规范常用字"></a>UI文件命名规范常用字</h2><table>
+<thead>
+<tr>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>正常</td>
+<td>normal</td>
+<td>选中</td>
+<td>selected</td>
+<td>按下</td>
+<td>pressed</td>
+<td>禁用</td>
+<td>disabled</td>
+</tr>
+<tr>
+<td>已访问</td>
+<td>visited</td>
+<td>鼠标悬停</td>
+<td>hover</td>
+<td>广告横幅</td>
+<td>banner</td>
+<td>背景</td>
+<td>bg</td>
+</tr>
+<tr>
+<td>顶部</td>
+<td>top</td>
+<td>中间</td>
+<td>middle</td>
+<td>底部</td>
+<td>bottom</td>
+<td>图标</td>
+<td>icon</td>
+</tr>
+<tr>
+<td>第一</td>
+<td>first</td>
+<td>第二</td>
+<td>second</td>
+<td>最后</td>
+<td>last</td>
+<td>标记</td>
+<td>sign</td>
+</tr>
+<tr>
+<td>页头</td>
+<td>header</td>
+<td>页脚</td>
+<td>footer</td>
+<td>页面主体</td>
+<td>main</td>
+<td>内容</td>
+<td>content</td>
+</tr>
+<tr>
+<td>导航</td>
+<td>nav</td>
+<td>标签</td>
+<td>tab</td>
+<td>按钮</td>
+<td>btn</td>
+<td>按钮文字</td>
+<td>btntext</td>
+</tr>
+<tr>
+<td>单选框</td>
+<td>radio</td>
+<td>复选框</td>
+<td>checkbox</td>
+<td>输入</td>
+<td>ip</td>
+<td>下拉</td>
+<td>cbb</td>
+</tr>
+<tr>
+<td>列表</td>
+<td>list</td>
+<td>菜单</td>
+<td>menu</td>
+<td>视图</td>
+<td>view</td>
+<td>面板</td>
+<td>panel</td>
+</tr>
+<tr>
+<td>栏</td>
+<td>bar</td>
+<td>状态栏</td>
+<td>statusbar</td>
+<td>导航栏</td>
+<td>navibar</td>
+<td>标签栏</td>
+<td>tabbar</td>
+</tr>
+<tr>
+<td>侧栏</td>
+<td>sidebar</td>
+<td>工具栏</td>
+<td>toolbar</td>
+<td>切换开关</td>
+<td>switch</td>
+<td>滑动器</td>
+<td>slider</td>
+</tr>
+</tbody></table>
+<h2 id="常用补充描述"><a href="#常用补充描述" class="headerlink" title="常用补充描述"></a>常用补充描述</h2><table>
+<thead>
+<tr>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>启动界面</td>
+<td>default</td>
+<td>登陆界面</td>
+<td>login</td>
+</tr>
+<tr>
+<td>启动图片</td>
+<td>default.png</td>
+<td>登陆背景</td>
+<td>login_bg.png</td>
+</tr>
+<tr>
+<td>启动logo</td>
+<td>default_logo.png</td>
+<td>登陆logo</td>
+<td>login_logo.png</td>
+</tr>
+<tr>
+<td>输入框选中状态</td>
+<td>login_input_pre.png</td>
+<td>登录按钮选中状态</td>
+<td>login_btn_pre.png</td>
+</tr>
+<tr>
+<td>列表页</td>
+<td>list_功能描述.png</td>
+<td>如：list_menu.collect.png</td>
+<td></td>
+</tr>
+<tr>
+<td>导航栏按钮</td>
+<td>nav_功能描述.png</td>
+<td>如：nav_menu.pngnav_menu_pre.png</td>
+<td></td>
+</tr>
+<tr>
+<td>左侧导航</td>
+<td>leftbar_功能描述.png</td>
+<td>如：lefterbar_info.pngnav_info_pre.png</td>
+<td></td>
+</tr>
+<tr>
+<td>主页面</td>
+<td>home_功能描述.png</td>
+<td>如：home_btn.recommended.png</td>
+<td></td>
+</tr>
+<tr>
+<td>底部菜单按钮</td>
+<td>tab_功能描述.png</td>
+<td>如：tab_set.pngnav_set_pre.png</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>最小icon不小于44最小可点击区域不小于88|</p>
+<h2 id="常见标签的默认display属性归类"><a href="#常见标签的默认display属性归类" class="headerlink" title="常见标签的默认display属性归类"></a>常见标签的默认display属性归类</h2><table>
+<thead>
+<tr>
+<th>‌类型‌</th>
+<th>‌常见标签‌</th>
+<th>‌Display值‌</th>
+<th>‌特性</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>块级元素</td>
+<td>div、h1、p、ul、li</td>
+<td>block</td>
+<td>新行开始，占据父元素整个宽度。</td>
+</tr>
+<tr>
+<td>行内元素</td>
+<td>span、a、img、input</td>
+<td>inline</td>
+<td>同一行排列，仅占据自身内容宽度。</td>
+</tr>
+<tr>
+<td>行内块级元素</td>
+<td>button、select、textarea</td>
+<td>inline-block</td>
+<td>行内排列，但可设置宽度、高度等块级属性。</td>
+</tr>
+<tr>
+<td>列表项元素</td>
+<td>li</td>
+<td>list-item</td>
+<td>表现如块级元素，且自带项目符号（如圆点、数字）。</td>
+</tr>
+<tr>
+<td>表格元素</td>
+<td>table、tbody、tr</td>
+<td>table</td>
+<td>表现如表格结构，支持表格布局特性。</td>
+</tr>
+<tr>
+<td>表格单元格元素</td>
+<td>td、th</td>
+<td>table-cell</td>
+<td>表现如表格单元格，支持垂直对齐、内容自适应等特性。</td>
+</tr>
+<tr>
+<td>隐藏元素</td>
+<td>script、style</td>
+<td>none</td>
+<td>不显示，不占据空间，常用于非展示性内容。</td>
+</tr>
+</tbody></table>
+<h3 id="1-标题标签"><a href="#1-标题标签" class="headerlink" title="1.标题标签"></a>1.标题标签</h3><p><code>&lt;h1&gt;&lt;/h1&gt;…&lt;h6&gt;&lt;/h6&gt;</code></p>
+<h3 id="2-段落和换行标签"><a href="#2-段落和换行标签" class="headerlink" title="2.段落和换行标签"></a>2.段落和换行标签</h3><p><code>段落标签：&lt;p&gt;&lt;/p&gt;；换行标签：&lt;br/&gt;</code></p>
+<h3 id="3-文本格式化标签"><a href="#3-文本格式化标签" class="headerlink" title="3.文本格式化标签"></a>3.文本格式化标签</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs text">加粗：&lt;strong&gt;&lt;/strong&gt;或者&lt;b&gt;&lt;/b&gt;<br>倾斜：&lt;em&gt;&lt;/em&gt;或者&lt;i&gt;&lt;/i&gt;<br>删除线：&lt;del&gt;&lt;/del&gt;或者&lt;s&gt;&lt;/s&gt;<br>下划线：&lt;ins&gt;&lt;/ins&gt;或者&lt;u&gt;&lt;/u&gt;<br></code></pre></td></tr></table></figure>
+
+<h3 id="4-和"><a href="#4-和" class="headerlink" title="4.&lt;div&gt;&lt;/div&gt;和&lt;span&gt;&lt;/span&gt;"></a>4.<code>&lt;div&gt;&lt;/div&gt;和&lt;span&gt;&lt;/span&gt;</code></h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs text">&lt;div&gt;&lt;/div&gt;是大盒子，一行只能放一个大盒子<br>&lt;span&gt;&lt;/span&gt;是小盒子，一行可以放多个<br></code></pre></td></tr></table></figure>
+
+<h3 id="5-图像标签"><a href="#5-图像标签" class="headerlink" title="5.图像标签"></a>5.图像标签</h3><p><code>图像标签：&lt;img src=&quot;xxxxxx&quot; 属性2=&quot;xxxxxx&quot;&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>属性值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>src</td>
+<td>图片路径</td>
+<td>必须属性</td>
+</tr>
+<tr>
+<td>alt</td>
+<td>文本</td>
+<td>替换文本，图像不能显示的文字</td>
+</tr>
+<tr>
+<td>title</td>
+<td>文本</td>
+<td>提示文本，鼠标放到图像上，显示的文字</td>
+</tr>
+<tr>
+<td>width</td>
+<td>像素</td>
+<td>设置图像的宽度</td>
+</tr>
+<tr>
+<td>height</td>
+<td>像素</td>
+<td>设置图像的高度</td>
+</tr>
+<tr>
+<td>border</td>
+<td>像素</td>
+<td>设置图像的边框粗细</td>
+</tr>
+</tbody></table>
+<h3 id="6-超链接标签"><a href="#6-超链接标签" class="headerlink" title="6.超链接标签"></a>6.超链接标签</h3><p><code>&lt;a href=&quot;跳转目标&quot; target=&quot;目标窗口的弹出方式&quot;&gt;文本或图像&lt;/a&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>href</td>
+<td>用于指定链接目标的ur地址，(必须属性)当为标签应用href属性时，它就具有了超链接的功能；href&#x3D;“#”表示这是一个空链接；如果href里面地址是—个文件或者压缩包，会下载这个文件</td>
+</tr>
+<tr>
+<td>target</td>
+<td>用于指定链接页面的打开方式，其中_self为默认值(在本窗口中打开)，_blank为在新窗口中打开方式</td>
+</tr>
+</tbody></table>
+<h3 id="7-锚点链接"><a href="#7-锚点链接" class="headerlink" title="7.锚点链接"></a>7.锚点链接</h3><p><code>&lt;a href=&quot;#要跳转的元素的id&quot;&gt;&lt;/a&gt;</code><br>点击链接的时候，会跳转到指定元素所在的位置。</p>
+<h3 id="8-注释和特殊字符"><a href="#8-注释和特殊字符" class="headerlink" title="8.注释和特殊字符"></a>8.注释和特殊字符</h3><p><code>注释以“&lt;!-”开头，以“-&gt;”结束。</code></p>
+<h3 id="9-表格标签"><a href="#9-表格标签" class="headerlink" title="9.表格标签"></a>9.表格标签</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs text">&lt;table&gt;&lt;/tabe&gt;是用于定义表格的标签。<br>&lt;tr&gt;&lt;/tr&gt;标签用于定义表格中的行，必须嵌套在&lt;table&gt;&lt;/table&gt;标签中<br>&lt;td&gt;&lt;/td&gt;用于定义表格中的单元格，必须嵌套在&lt;tr&gt;&lt;/tr&gt;标签中<br>&lt;th&gt;&lt;/th&gt;表示表格的表头部分，表示表格的第一行或第一列，其中的文本内容加粗居中显示<br>&lt;thead&gt;&lt;/thead&gt;用于定义表格的头部。&lt;thead&gt;内部必须拥有&lt;tr&gt;标签，一般是位于第一行<br>&lt;tbody&gt;&lt;/tbody&gt;用于定义表格的主体，主要用于放数据本体。<br></code></pre></td></tr></table></figure>
+
+<p>一些常用的属性</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>属性值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>align</td>
+<td>left、center、right</td>
+<td>规定表格相对周围元素的对齐方式</td>
+</tr>
+<tr>
+<td>border</td>
+<td>1或“”</td>
+<td>规定表格单元是否拥有边框，默认为“”，表示没有边框</td>
+</tr>
+<tr>
+<td>cellpadding</td>
+<td>像素值</td>
+<td>规定单元边沿与其内容之间的空白，默认1像素</td>
+</tr>
+<tr>
+<td>cellspacing</td>
+<td>像素值</td>
+<td>规定单元格之间的空白，默认2像素</td>
+</tr>
+<tr>
+<td>width</td>
+<td>像素值或百分比</td>
+<td>规定表格的宽度</td>
+</tr>
+<tr>
+<td>height</td>
+<td>像素值或百分比</td>
+<td>规定表格的高度</td>
+</tr>
+<tr>
+<td>rowspan</td>
+<td>要合并的单元格个数</td>
+<td>合并行单元格，记得要删除多余的单元格</td>
+</tr>
+<tr>
+<td>colspan</td>
+<td>要合并的单元格个数</td>
+<td>合并列单元格，记得要删除多余的单元格</td>
+</tr>
+</tbody></table>
+<h3 id="10-列表标签"><a href="#10-列表标签" class="headerlink" title="10.列表标签"></a>10.列表标签</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs text">&lt;ul&gt;&lt;/ul&gt;：定义无序列表，里面只能放li标签，其它标签不被允许<br>&lt;ol&gt;&lt;/ol&gt;：定义有序列表，里面只能放li标签，其它标签不被允许<br>&lt;li&gt;&lt;/li&gt;：有序列表和无序列表中的列表项，相当于一个容器，里面可以放其它标签<br>&lt;dl&gt;&lt;/dl&gt;：定义自定义列表，里面只能包含dt和dd标签<br>&lt;dt&gt;&lt;/dt&gt;：定义自定义列表中的项目<br>&lt;dd&gt;&lt;/dd&gt;：描述自定义列表中的每一个项目<br></code></pre></td></tr></table></figure>
+
+<h3 id="11-表单标签"><a href="#11-表单标签" class="headerlink" title="11.表单标签"></a>11.表单标签</h3><p>通常一个表单由一个大的表单域构成，表单域里面又包含表单元素和提示信息。<br><code>&lt;form&gt;&lt;/form&gt;：表单域标签，表单域就是一个包含表单元素的区域</code></p>
+<p><code>&lt;form&gt;&lt;/form&gt;标签常用属性：</code></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>属性值</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>action</td>
+<td>url地址</td>
+<td>用于指定接收并处理表单数据的服务器程序的url地址</td>
+</tr>
+<tr>
+<td>method</td>
+<td>get&#x2F;post</td>
+<td>用于设定表单数据的提交方式</td>
+</tr>
+<tr>
+<td>name</td>
+<td>名称</td>
+<td>用于指定表单的名称，以区分用一个页面中的多个表单域</td>
+</tr>
+</tbody></table>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs text">&lt;input/&gt;：输入表单元素<br>&lt;lable&gt;&lt;/lable&gt;：绑定一个表单元素，当点击lable标签内的文本时，会自动将焦点转到对应的表单元素上，lable标签的for属性必须得与相关元素的id属性相同<br>&lt;select&gt;&lt;/select&gt;：下拉表单元素，用于定义一个下拉列表<br>&lt;option&gt;&lt;/option&gt;：下拉列表中的元素，定义**selected=“selected”**属性时，当前项为默认选中项<br>&lt;textarea&gt;&lt;/textarea&gt;文本域元素，用于定义一个多行文本输入框，cols属性规定每行的字符数，rows属性规定显示的行数<br></code></pre></td></tr></table></figure>
+
+<p><code>&lt;input/&gt;标签的常用属性：</code></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>属性值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>type</td>
+<td>见下表</td>
+<td>用于设置<code>&lt;input/&gt;</code>标签的不同形式</td>
+</tr>
+<tr>
+<td>name</td>
+<td>用户自定义</td>
+<td>定义input元素的名称</td>
+</tr>
+<tr>
+<td>value</td>
+<td>用户自定义</td>
+<td>设置input元素的默认值</td>
+</tr>
+<tr>
+<td>checked</td>
+<td>checked</td>
+<td>设置此input元素首次加载时应当被选中</td>
+</tr>
+<tr>
+<td>maxlength</td>
+<td>正整数</td>
+<td>规定输入字段中的字符的最大长度</td>
+</tr>
+</tbody></table>
+<p><code>&lt;input/&gt;标签type属性值：</code></p>
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>button</td>
+<td>定义可点击按钮</td>
+</tr>
+<tr>
+<td>checkbox</td>
+<td>定义复选框，一组复选框name属性必须相同</td>
+</tr>
+<tr>
+<td>file</td>
+<td>定义输入字段和“浏览”按钮，供文件上传</td>
+</tr>
+<tr>
+<td>hidden</td>
+<td>定义隐藏的输入字段</td>
+</tr>
+<tr>
+<td>image</td>
+<td>定义图像形式的提交按钮</td>
+</tr>
+<tr>
+<td>password</td>
+<td>定义密码字段，该字段中的字符被掩码</td>
+</tr>
+<tr>
+<td>radio</td>
+<td>定义单选按钮，一组单选按钮的name属性值必须相同</td>
+</tr>
+<tr>
+<td>reset</td>
+<td>定义重置按钮，清除表单中的所有数据</td>
+</tr>
+<tr>
+<td>submit</td>
+<td>定义提交按钮，提交到action属性指定的地址</td>
+</tr>
+<tr>
+<td>text</td>
+<td>定义单行的输入字段，用户可在其中输入文本，默认宽度为20字符</td>
+</tr>
+</tbody></table>
+
+    </div>
+    
+        
+        <div class="toc-list">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#UI%E6%96%87%E4%BB%B6%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83%E5%B8%B8%E7%94%A8%E5%AD%97"><span class="toc-text">UI文件命名规范常用字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E8%A1%A5%E5%85%85%E6%8F%8F%E8%BF%B0"><span class="toc-text">常用补充描述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E6%A0%87%E7%AD%BE%E7%9A%84%E9%BB%98%E8%AE%A4display%E5%B1%9E%E6%80%A7%E5%BD%92%E7%B1%BB"><span class="toc-text">常见标签的默认display属性归类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%A0%87%E9%A2%98%E6%A0%87%E7%AD%BE"><span class="toc-text">1.标题标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%AE%B5%E8%90%BD%E5%92%8C%E6%8D%A2%E8%A1%8C%E6%A0%87%E7%AD%BE"><span class="toc-text">2.段落和换行标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%96%87%E6%9C%AC%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%A0%87%E7%AD%BE"><span class="toc-text">3.文本格式化标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%92%8C"><span class="toc-text">4.&lt;div&gt;&lt;&#x2F;div&gt;和&lt;span&gt;&lt;&#x2F;span&gt;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E5%9B%BE%E5%83%8F%E6%A0%87%E7%AD%BE"><span class="toc-text">5.图像标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E8%B6%85%E9%93%BE%E6%8E%A5%E6%A0%87%E7%AD%BE"><span class="toc-text">6.超链接标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E9%94%9A%E7%82%B9%E9%93%BE%E6%8E%A5"><span class="toc-text">7.锚点链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E6%B3%A8%E9%87%8A%E5%92%8C%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6"><span class="toc-text">8.注释和特殊字符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E8%A1%A8%E6%A0%BC%E6%A0%87%E7%AD%BE"><span class="toc-text">9.表格标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-%E5%88%97%E8%A1%A8%E6%A0%87%E7%AD%BE"><span class="toc-text">10.列表标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-%E8%A1%A8%E5%8D%95%E6%A0%87%E7%AD%BE"><span class="toc-text">11.表单标签</span></a></li></ol></li></ol>
+        </div>
+        <div class="buttonbox">
+            <a class="toc-button">
+                <svg viewBox="0 0 14 14">
+                    <path class="toc-button-n" d="
+                    M1 4 13 4 M1 7 13 7 M1 10 13 10"/>
+                </svg>
+            </a>
+            <a class="to-top" href="javascript:scrollTo(0,0)" target="_self">
+                <svg viewBox="0 0 14 14">
+                    <path d="M1 10 7 4 13 10"/>
+                </svg>
+            </a>
+        </div>
+        
+    
+</div>
+                <div class="footer">
+    <span>Copyright © 2023 Yanluo</span>
+    <span>Theme Designed By <a target="_blank" href="https://yanluofenglin.github.io/">烟络</a></span>
+</div>
+
+<!-- 加载 Highlight.js CSS 文件 -->
+
+
+<!-- 加载 Highlight.js 库 -->
+
+<script src="/js/highlight.min.js"></script>
+
+
+<script src="/js/javascript.min.js"></script>
+
+
+<!-- 加载行号插件 -->
+
+
+<script src="/js/highlightjs-line-numbers.min.js"></script>
+
+
+<script>
+    hljs.highlight();
+    hljs.initLineNumbersOnLoad();
+</script>
+
+            </div>
+		</div>
+	</div>
+    </body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/decorate/snow2.js"></script>
+<script src="/js/decorate/love1.js"></script>
+
+<script src="/js/toc.js"></script>
