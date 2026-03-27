@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport" />
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    
+    <title>Windows光标inf2 | 烟络枫林</title>
+    <script language="javascript">
+        var time;
+        var normar_title = document.title;
+        document.addEventListener('visibilitychange', function () {
+            if (document.visibilityState == 'hidden') {
+                clearTimeout(time);        
+                document.title = '^•༝•^ฅ我藏好了哦~ Windows光标inf2 | 烟络枫林';
+            } else {
+                document.title = '=^𖥦^=被你发现啦~ Windows光标inf2 | 烟络枫林';
+                time = setTimeout(function() { document.title = normar_title; }, 3000);
+            }
+        });
+    </script>
+
+    
+<link rel="stylesheet" href="/css/reset.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/css/markdown.css">
+
+    
+<link rel="stylesheet" href="/css/fonts.css">
+
+    
+<link rel="stylesheet" href="/css/toc.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+    <body>
+	<div class="all">
+        <div class="paper">
+            <div class="paper-main">
+                
+                    <div class="post-header">
+    <a class="go-home" href="/">
+        <svg viewBox="0 0 14 14">
+            <path d="M10 1 4 7 10 13"/>
+        </svg>
+    </a>
+	<ul class="post-nav">
+        
+        <li><a href="/">首页</a></li>
+        
+        <li><a href="/archives">归档</a></li>
+        
+        <li><a href="/categories">分类</a></li>
+        
+        <li><a href="/tags">标签</a></li>
+        
+        <li><a href="/about">关于</a></li>
+        
+    </ul>
+</div>
+                
+                <div class="post-main">
+<div class="post-box">
+    
+        
+        <div class="post-title">
+            Windows光标inf2
+        </div>
+        
+        <div class="post-date">
+            2017-01-01
+        </div>
+	
+</div>
+    
+    <div class="post-md">
+        <p>[Version]                ; 版本<br>Signature&#x3D;”$CHICAGO$”    ; 签名&#x3D;”$CHICAGO$”</p>
+<p>[DefaultInstall]         ; 默认安装<br>CopyFiles &#x3D; Scheme.Cur   ; 复制图标文件<br>AddReg    &#x3D; Scheme.Reg   ; 添加注册表项<br>DelReg    &#x3D; Scheme.DelReg; 删除旧注册表项</p>
+<p>[DestinationDirs]        ; 目标目录<br>Scheme.Cur &#x3D; 10, “%CUR_DIR%”</p>
+<p>[Scheme.Reg]             ; 指针方案注册<br>HKCU, “Control Panel\Cursors\Schemes”, “%SCHEME_NAME%”, , “%10%%CUR_DIR%%POINTER%,%10%%CUR_DIR%%HELP%,%10%%CUR_DIR%%WORK%,%10%%CUR_DIR%%BUSY%,%10%%CUR_DIR%%CROSS%,%10%%CUR_DIR%%TEXT%,%10%%CUR_DIR%%HAND%,%10%%CUR_DIR%%UNAVAILABLE%,%10%%CUR_DIR%%VERT%,%10%%CUR_DIR%%HORZ%,%10%%CUR_DIR%%DGN1%,%10%%CUR_DIR%%DGN2%,%10%%CUR_DIR%%MOVE%,%10%%CUR_DIR%%ALTERNATE%,%10%%CUR_DIR%%LINK%,%10%%CUR_DIR%%LOC%,%10%%CUR_DIR%%PERSON%”<br>HKLM, “SOFTWARE\Microsoft\Windows\CurrentVersion\Runonce\Setup”, “”, , “rundll32.exe shell32.dll,Control_RunDLL main.cpl @0”             ; 刷新控制面板</p>
+<p>[Scheme.DelReg]          ; 清理旧注册项<br>HKCU, “Control Panel\Cursors\Schemes”, “%SCHEME_NAME%”</p>
+<p>[Scheme.Cur]             ; 指针文件列表<br>“%POINTER%”<br>“%HELP%”<br>“%WORK%”<br>“%BUSY%”<br>“%CROSS%”<br>“%TEXT%”<br>“%HAND%”<br>“%UNAVAILABLE%”<br>“%VERT%”<br>“%HORZ%”<br>“%DGN1%”<br>“%DGN2%”<br>“%MOVE%”<br>“%ALTERNATE%”<br>“%LINK%”<br>“%LOC%”<br>“%PERSON%”</p>
+<p>[Strings]                      ; 可配置参数<br>CUR_DIR    &#x3D; “Cursors\MyCursor”; 光标目录<br>SCHEME_NAME&#x3D; “MyCursor”        ; 光标名称<br>POINTER    &#x3D; “cursor_01.ani”<br>HELP       &#x3D; “cursor_02.ani”<br>WORK       &#x3D; “cursor_03.ani”<br>BUSY       &#x3D; “cursor_04.ani”<br>CROSS      &#x3D; “cursor_05.ani”<br>TEXT       &#x3D; “cursor_06.ani”<br>HAND       &#x3D; “cursor_07.ani”<br>UNAVAILABLE&#x3D; “cursor_08.ani”<br>VERT       &#x3D; “cursor_09.ani”<br>HORZ       &#x3D; “cursor_10.ani”<br>DGN1       &#x3D; “cursor_11.ani”<br>DGN2       &#x3D; “cursor_12.ani”<br>MOVE       &#x3D; “cursor_13.ani”<br>ALTERNATE  &#x3D; “cursor_14.ani”<br>LINK       &#x3D; “cursor_15.ani”<br>LOC        &#x3D; “cursor_16.ani”<br>PERSON     &#x3D; “cursor_17.ani”</p>
+
+    </div>
+    
+        
+        <div class="toc-list">
+            
+        </div>
+        <div class="buttonbox">
+            <a class="toc-button">
+                <svg viewBox="0 0 14 14">
+                    <path class="toc-button-n" d="
+                    M1 4 13 4 M1 7 13 7 M1 10 13 10"/>
+                </svg>
+            </a>
+            <a class="to-top" href="javascript:scrollTo(0,0)" target="_self">
+                <svg viewBox="0 0 14 14">
+                    <path d="M1 10 7 4 13 10"/>
+                </svg>
+            </a>
+        </div>
+        
+    
+</div>
+                <div class="footer">
+    <span>Copyright © 2023 Yanluo</span>
+    <span>Theme Designed By <a target="_blank" href="https://yanluofenglin.github.io/">烟络</a></span>
+</div>
+
+<!-- 加载 Highlight.js CSS 文件 -->
+
+
+<!-- 加载 Highlight.js 库 -->
+
+<script src="/js/highlight.min.js"></script>
+
+
+<script src="/js/javascript.min.js"></script>
+
+
+<!-- 加载行号插件 -->
+
+
+<script src="/js/highlightjs-line-numbers.min.js"></script>
+
+
+<script>
+    hljs.highlight();
+    hljs.initLineNumbersOnLoad();
+</script>
+
+            </div>
+		</div>
+	</div>
+    </body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/decorate/snow2.js"></script>
+<script src="/js/decorate/love1.js"></script>
+
+<script src="/js/toc.js"></script>
