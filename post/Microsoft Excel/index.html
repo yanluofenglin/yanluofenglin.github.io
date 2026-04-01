@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport" />
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    
+    <title>Windows Excel | 烟络枫林</title>
+    <script language="javascript">
+        var time;
+        var normar_title = document.title;
+        document.addEventListener('visibilitychange', function () {
+            if (document.visibilityState == 'hidden') {
+                clearTimeout(time);        
+                document.title = '^•༝•^ฅ我藏好了哦~ Windows Excel | 烟络枫林';
+            } else {
+                document.title = '=^𖥦^=被你发现啦~ Windows Excel | 烟络枫林';
+                time = setTimeout(function() { document.title = normar_title; }, 3000);
+            }
+        });
+    </script>
+
+    
+<link rel="stylesheet" href="/css/reset.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/css/markdown.css">
+
+    
+<link rel="stylesheet" href="/css/fonts.css">
+
+    
+<link rel="stylesheet" href="/css/toc.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+    <body>
+	<div class="all">
+        <div class="paper">
+            <div class="paper-main">
+                
+                    <div class="post-header">
+    <a class="go-home" href="/">
+        <svg viewBox="0 0 14 14">
+            <path d="M10 1 4 7 10 13"/>
+        </svg>
+    </a>
+	<ul class="post-nav">
+        
+        <li><a href="/">首页</a></li>
+        
+        <li><a href="/archives">归档</a></li>
+        
+        <li><a href="/categories">分类</a></li>
+        
+        <li><a href="/tags">标签</a></li>
+        
+        <li><a href="/about">关于</a></li>
+        
+    </ul>
+</div>
+                
+                <div class="post-main">
+<div class="post-box">
+    
+        
+        <div class="post-title">
+            Windows Excel
+        </div>
+        
+        <div class="post-date">
+            2023-01-01
+        </div>
+	
+</div>
+    
+    <div class="post-md">
+        <h2 id="下拉选项"><a href="#下拉选项" class="headerlink" title="下拉选项"></a>下拉选项</h2><p>数据-数据验证-设置-序列-来源（1.填充内容，用英文逗号隔开，如：套图,套版,优化,视频。2.选则选区）</p>
+<h2 id="区域填充"><a href="#区域填充" class="headerlink" title="区域填充"></a>区域填充</h2><p>开始-条件格式-管理规则-编辑规则-使用公式确定要设置格式的单元格<br>公式：&#x3D;COUNTIF($D2,”<em>“&amp;”套图”&amp;”</em>“)<br>$D2：选择的一列<br>“<em>“&amp;”套图”&amp;”</em>“：需要改变填充颜色的内容</p>
+<h2 id="从另一个表中自动提取另一个表对应的数据"><a href="#从另一个表中自动提取另一个表对应的数据" class="headerlink" title="从另一个表中自动提取另一个表对应的数据"></a>从另一个表中自动提取另一个表对应的数据</h2><p>需要填充的内容：&#x3D;VLOOKUP(C2,Sheet2!$A$1:$C$37,2,0)&#x2F;&#x3D;VLOOKUP(C2,$A$1:$C$37,2,1)<br>C2：要找的对应的内容<br>Sheet2!：提取的表格<br>$A$1:$C$37：选取的区域<br>2：表格的第二列<br>0：大致匹配<br>1：精准匹配</p>
+
+    </div>
+    
+        
+        <div class="toc-list">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E6%8B%89%E9%80%89%E9%A1%B9"><span class="toc-text">下拉选项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8C%BA%E5%9F%9F%E5%A1%AB%E5%85%85"><span class="toc-text">区域填充</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8E%E5%8F%A6%E4%B8%80%E4%B8%AA%E8%A1%A8%E4%B8%AD%E8%87%AA%E5%8A%A8%E6%8F%90%E5%8F%96%E5%8F%A6%E4%B8%80%E4%B8%AA%E8%A1%A8%E5%AF%B9%E5%BA%94%E7%9A%84%E6%95%B0%E6%8D%AE"><span class="toc-text">从另一个表中自动提取另一个表对应的数据</span></a></li></ol>
+        </div>
+        <div class="buttonbox">
+            <a class="toc-button">
+                <svg viewBox="0 0 14 14">
+                    <path class="toc-button-n" d="
+                    M1 4 13 4 M1 7 13 7 M1 10 13 10"/>
+                </svg>
+            </a>
+            <a class="to-top" href="javascript:scrollTo(0,0)" target="_self">
+                <svg viewBox="0 0 14 14">
+                    <path d="M1 10 7 4 13 10"/>
+                </svg>
+            </a>
+        </div>
+        
+    
+</div>
+                <div class="footer">
+    <span>Copyright © 2023 Yanluo</span>
+    <span>Theme Designed By <a target="_blank" href="https://yanluofenglin.github.io/">烟络</a></span>
+</div>
+
+<!-- 加载 Highlight.js CSS 文件 -->
+
+
+<!-- 加载 Highlight.js 库 -->
+
+<script src="/js/highlight.min.js"></script>
+
+
+<script src="/js/javascript.min.js"></script>
+
+
+<!-- 加载行号插件 -->
+
+
+<script src="/js/highlightjs-line-numbers.min.js"></script>
+
+
+<script>
+    hljs.highlight();
+    hljs.initLineNumbersOnLoad();
+</script>
+
+            </div>
+		</div>
+	</div>
+    </body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/decorate/snow2.js"></script>
+<script src="/js/decorate/love1.js"></script>
+
+<script src="/js/toc.js"></script>

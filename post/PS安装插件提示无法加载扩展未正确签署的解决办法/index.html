@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport" />
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    
+    <title>PS安装插件提示无法加载扩展未正确签署的解决办法 | 烟络枫林</title>
+    <script language="javascript">
+        var time;
+        var normar_title = document.title;
+        document.addEventListener('visibilitychange', function () {
+            if (document.visibilityState == 'hidden') {
+                clearTimeout(time);        
+                document.title = '^•༝•^ฅ我藏好了哦~ PS安装插件提示无法加载扩展未正确签署的解决办法 | 烟络枫林';
+            } else {
+                document.title = '=^𖥦^=被你发现啦~ PS安装插件提示无法加载扩展未正确签署的解决办法 | 烟络枫林';
+                time = setTimeout(function() { document.title = normar_title; }, 3000);
+            }
+        });
+    </script>
+
+    
+<link rel="stylesheet" href="/css/reset.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/css/markdown.css">
+
+    
+<link rel="stylesheet" href="/css/fonts.css">
+
+    
+<link rel="stylesheet" href="/css/toc.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+    <body>
+	<div class="all">
+        <div class="paper">
+            <div class="paper-main">
+                
+                    <div class="post-header">
+    <a class="go-home" href="/">
+        <svg viewBox="0 0 14 14">
+            <path d="M10 1 4 7 10 13"/>
+        </svg>
+    </a>
+	<ul class="post-nav">
+        
+        <li><a href="/">首页</a></li>
+        
+        <li><a href="/archives">归档</a></li>
+        
+        <li><a href="/categories">分类</a></li>
+        
+        <li><a href="/tags">标签</a></li>
+        
+        <li><a href="/about">关于</a></li>
+        
+    </ul>
+</div>
+                
+                <div class="post-main">
+<div class="post-box">
+    
+        
+        <div class="post-title">
+            PS安装插件提示无法加载扩展未正确签署的解决办法
+        </div>
+        
+        <div class="post-date">
+            2023-01-01
+        </div>
+	
+</div>
+    
+    <div class="post-md">
+        <h2 id="PS安装插件提示无法加载扩展未正确签署的解决办法"><a href="#PS安装插件提示无法加载扩展未正确签署的解决办法" class="headerlink" title="PS安装插件提示无法加载扩展未正确签署的解决办法"></a>PS安装插件提示无法加载扩展未正确签署的解决办法</h2><p>1、快捷键“win+R”来打开“运行”窗口，打开之后输入”regedit”确定。</p>
+<p>2、打开如图注册表，找到“HKEY_CURRENT_USER&#x2F;Software&#x2F;Adobe&#x2F;CSXS.11”文件位置。</p>
+<p>温馨提示:其它版本Photoshop以CSXS.X数值最大的目录下新建<strong>字符串值</strong>注册表<br>例如：<br>CC2015：HKEY_CURRENT_USER\Software\Adobe\CSXS.6<br>CC2017：HKEY_CURRENT_USER\Software\Adobe\CSXS.7<br>CC2018：HKEY_CURRENT_USER\Software\Adobe\CSXS.8<br>CC2019：HKEY_CURRENT_USER\Software\Adobe\CSXS.9<br>CC2022：HKEY_CURRENT_USER\Software\Adobe\CSXS.11</p>
+<p>3、新建字符串，名称为PlayerDebugMode然后双击输入值为1。</p>
+
+    </div>
+    
+        
+        <div class="toc-list">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#PS%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E6%8F%90%E7%A4%BA%E6%97%A0%E6%B3%95%E5%8A%A0%E8%BD%BD%E6%89%A9%E5%B1%95%E6%9C%AA%E6%AD%A3%E7%A1%AE%E7%AD%BE%E7%BD%B2%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95"><span class="toc-text">PS安装插件提示无法加载扩展未正确签署的解决办法</span></a></li></ol>
+        </div>
+        <div class="buttonbox">
+            <a class="toc-button">
+                <svg viewBox="0 0 14 14">
+                    <path class="toc-button-n" d="
+                    M1 4 13 4 M1 7 13 7 M1 10 13 10"/>
+                </svg>
+            </a>
+            <a class="to-top" href="javascript:scrollTo(0,0)" target="_self">
+                <svg viewBox="0 0 14 14">
+                    <path d="M1 10 7 4 13 10"/>
+                </svg>
+            </a>
+        </div>
+        
+    
+</div>
+                <div class="footer">
+    <span>Copyright © 2023 Yanluo</span>
+    <span>Theme Designed By <a target="_blank" href="https://yanluofenglin.github.io/">烟络</a></span>
+</div>
+
+<!-- 加载 Highlight.js CSS 文件 -->
+
+
+<!-- 加载 Highlight.js 库 -->
+
+<script src="/js/highlight.min.js"></script>
+
+
+<script src="/js/javascript.min.js"></script>
+
+
+<!-- 加载行号插件 -->
+
+
+<script src="/js/highlightjs-line-numbers.min.js"></script>
+
+
+<script>
+    hljs.highlight();
+    hljs.initLineNumbersOnLoad();
+</script>
+
+            </div>
+		</div>
+	</div>
+    </body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/decorate/snow2.js"></script>
+<script src="/js/decorate/love1.js"></script>
+
+<script src="/js/toc.js"></script>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport" />
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    
+    <title>Blender渲染线稿 | 烟络枫林</title>
+    <script language="javascript">
+        var time;
+        var normar_title = document.title;
+        document.addEventListener('visibilitychange', function () {
+            if (document.visibilityState == 'hidden') {
+                clearTimeout(time);        
+                document.title = '^•༝•^ฅ我藏好了哦~ Blender渲染线稿 | 烟络枫林';
+            } else {
+                document.title = '=^𖥦^=被你发现啦~ Blender渲染线稿 | 烟络枫林';
+                time = setTimeout(function() { document.title = normar_title; }, 3000);
+            }
+        });
+    </script>
+
+    
+<link rel="stylesheet" href="/css/reset.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/css/markdown.css">
+
+    
+<link rel="stylesheet" href="/css/fonts.css">
+
+    
+<link rel="stylesheet" href="/css/toc.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+    <body>
+	<div class="all">
+        <div class="paper">
+            <div class="paper-main">
+                
+                    <div class="post-header">
+    <a class="go-home" href="/">
+        <svg viewBox="0 0 14 14">
+            <path d="M10 1 4 7 10 13"/>
+        </svg>
+    </a>
+	<ul class="post-nav">
+        
+        <li><a href="/">首页</a></li>
+        
+        <li><a href="/archives">归档</a></li>
+        
+        <li><a href="/categories">分类</a></li>
+        
+        <li><a href="/tags">标签</a></li>
+        
+        <li><a href="/about">关于</a></li>
+        
+    </ul>
+</div>
+                
+                <div class="post-main">
+<div class="post-box">
+    
+        
+        <div class="post-title">
+            Blender渲染线稿
+        </div>
+        
+        <div class="post-date">
+            2023-01-01
+        </div>
+	
+</div>
+    
+    <div class="post-md">
+        <h2 id="渲染设置"><a href="#渲染设置" class="headerlink" title="渲染设置"></a>渲染设置</h2><p>渲染引擎：工作台<br>光照：平面<br>颜色：单一（改为纯白）<br>选项：背面剔除、透视模式（改为0）<br>胶片：透明<br>勾选Freestyle<br>色彩管理：very high contrast</p>
+<h2 id="视图层设置"><a href="#视图层设置" class="headerlink" title="视图层设置"></a>视图层设置</h2><p>Freestyle-边缘检测-折痕角：150°<br>Freestyle线条集-选择依据：图像边界<br>Freestyle线条集-可见性：可见<br>Freestyle线条集-边类型：求反（包含）、组合（逻辑OR）、类型（剪影、折痕、边界范围、轮廓、外部轮廓）（部分区域线条过于密集可以取消勾选折痕）<br>Freestyle线宽-基线宽度：3</p>
+<h2 id="外轮廓加粗"><a href="#外轮廓加粗" class="headerlink" title="外轮廓加粗"></a>外轮廓加粗</h2><p>和上面相比改变的部分<br>新建线条集，并置顶<br>Freestyle线条集-边类型：求反（包含）、组合（逻辑OR）、类型（外部轮廓）<br>Freestyle线宽-基线宽度：6</p>
+<h2 id="特殊标记边"><a href="#特殊标记边" class="headerlink" title="特殊标记边"></a>特殊标记边</h2><p>和上面相比改变的部分<br>新建线条集，并置顶<br>进入编辑模式，选择边，右键，标记Freestyle边<br>Freestyle线条集-边类型：求反（包含）、组合（逻辑OR）、类型（标记边）<br>Freestyle线宽-基线宽度：6<br>Freestyle笔画-虚线：<br>Freestyle颜色：</p>
+<h2 id="摄像机-数据"><a href="#摄像机-数据" class="headerlink" title="摄像机-数据"></a>摄像机-数据</h2><p>视图显示-构图辅助线：九宫分割</p>
+<h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><p>删除集合、物体、摄像机、日光<br>文件-清理-清理未使用数据<br>世界环境、图片、材质、笔刷、线条样式</p>
+
+    </div>
+    
+        
+        <div class="toc-list">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B8%B2%E6%9F%93%E8%AE%BE%E7%BD%AE"><span class="toc-text">渲染设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%86%E5%9B%BE%E5%B1%82%E8%AE%BE%E7%BD%AE"><span class="toc-text">视图层设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%96%E8%BD%AE%E5%BB%93%E5%8A%A0%E7%B2%97"><span class="toc-text">外轮廓加粗</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E6%A0%87%E8%AE%B0%E8%BE%B9"><span class="toc-text">特殊标记边</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%91%84%E5%83%8F%E6%9C%BA-%E6%95%B0%E6%8D%AE"><span class="toc-text">摄像机-数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A0%E9%99%A4"><span class="toc-text">删除</span></a></li></ol>
+        </div>
+        <div class="buttonbox">
+            <a class="toc-button">
+                <svg viewBox="0 0 14 14">
+                    <path class="toc-button-n" d="
+                    M1 4 13 4 M1 7 13 7 M1 10 13 10"/>
+                </svg>
+            </a>
+            <a class="to-top" href="javascript:scrollTo(0,0)" target="_self">
+                <svg viewBox="0 0 14 14">
+                    <path d="M1 10 7 4 13 10"/>
+                </svg>
+            </a>
+        </div>
+        
+    
+</div>
+                <div class="footer">
+    <span>Copyright © 2023 Yanluo</span>
+    <span>Theme Designed By <a target="_blank" href="https://yanluofenglin.github.io/">烟络</a></span>
+</div>
+
+<!-- 加载 Highlight.js CSS 文件 -->
+
+
+<!-- 加载 Highlight.js 库 -->
+
+<script src="/js/highlight.min.js"></script>
+
+
+<script src="/js/javascript.min.js"></script>
+
+
+<!-- 加载行号插件 -->
+
+
+<script src="/js/highlightjs-line-numbers.min.js"></script>
+
+
+<script>
+    hljs.highlight();
+    hljs.initLineNumbersOnLoad();
+</script>
+
+            </div>
+		</div>
+	</div>
+    </body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/decorate/snow2.js"></script>
+<script src="/js/decorate/love1.js"></script>
+
+<script src="/js/toc.js"></script>
